@@ -1,0 +1,73 @@
+  [FRAME] "Search" #3:21505 template=EL-b2a41849
+    [FRAME] "Android status" #3:21506 template=EL-2fb66994
+      [TEXT] #3:21507 template=EL-a5c303b8
+      [FRAME] "System indicators" #3:21508 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22441 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22444 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22447 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21512 template=EL-373c9615
+      [FRAME] "Title group" #3:21513 template=EL-5efdc068
+        [IMAGE-SVG] "arrow-left" #3:22450 template=EL-d2f5d0a6
+        [TEXT] #3:21515 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_f4955406 text="Search"
+    [FRAME] "Search content" #3:21516 layout={"mode":"column","alignSelf":"stretch","padding":"6px 24px 24px","alignItems":"stretch","gap":"18px","sizing":{"horizontal":"fill","vertical":"fill"}}
+      [FRAME] "Search field" #3:21517 layout=layout_2bc9fd9e fills=fill_658ab2fa strokes=fill_76dca3bd strokeWeight=1.5px effects=effect_2b3500da borderRadius=24px
+        [IMAGE-SVG] "search" #3:22453 template=EL-a73b2a19
+        [TEXT] #3:21519 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_02d97395 text="design systems"
+        [IMAGE-SVG] "x-circle" #3:22456 template=EL-f652840d
+      [FRAME] "Search filters" #3:21521 layout={"mode":"row","alignSelf":"stretch","gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "Filter chip" #3:21522 layout=layout_2ccac5f0 fills=fill_76dca3bd strokes=fill_76dca3bd strokeWeight=1px borderRadius=100px
+          [TEXT] #3:21523 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_0665b73a text="All 12"
+        [FRAME] "Filter chip" #3:21524 template=EL-13c77e58
+          [TEXT] #3:21525 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="Design 8"
+        [FRAME] "Filter chip" #3:21526 template=EL-13c77e58
+          [TEXT] #3:21527 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="Work 3"
+        [FRAME] "Filter chip" #3:21528 template=EL-13c77e58
+          [TEXT] #3:21529 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="Favorites 4"
+      [FRAME] "Search summary" #3:21530 template=EL-bb582553
+        [TEXT] #3:21531 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_defc74b3 text="12 results"
+        [FRAME] "Sort" #3:21532 template=EL-62387e23
+          [TEXT] #3:21533 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="Most relevant"
+          [IMAGE-SVG] "chevron-down" #3:22459 template=EL-522202e5
+      [FRAME] "Search results" #3:21535 template=EL-7e8f3d26
+        [FRAME] "Link preview card" #3:21536 template=EL-add45303
+          [RECTANGLE] "Editorial thumbnail" #3:21537 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"7929e5f75b111beb8dc2cc456f61c6da91fbd6c7","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21538 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21539 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21540 template=EL-bb582553
+                [TEXT] #3:21541 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_0665b73a text="TYPEWOLF"
+                [IMAGE-SVG] "heart" #3:22462 template=EL-494805ba
+              [TEXT] #3:21543 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_a7c5ee22 text="A practical guide to editorial design systems"
+            [TEXT] #3:21544 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_0665b73a text="Design · Sep 24"
+        [FRAME] "Link preview card" #3:21545 template=EL-add45303
+          [RECTANGLE] "Editorial thumbnail" #3:21546 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"0b85b9328b0a7dbe743a04b73eae160eebc892c5","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21547 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21548 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21549 template=EL-bb582553
+                [TEXT] #3:21550 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_0665b73a text="DENSE DISCOVERY"
+              [TEXT] #3:21551 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_a7c5ee22 text="Design systems are conversations"
+            [TEXT] #3:21552 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_0665b73a text="Design · Sep 20"
+        [FRAME] "Link preview card" #3:21553 template=EL-add45303
+          [RECTANGLE] "Editorial thumbnail" #3:21554 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"98ab28578410dd65c0dc33dba977369ab84081fb","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21555 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21556 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21557 template=EL-bb582553
+                [TEXT] #3:21558 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_0665b73a text="FIGMA"
+              [TEXT] #3:21559 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_a7c5ee22 text="Building tokens that teams can trust"
+            [TEXT] #3:21560 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_0665b73a text="Work · Sep 12"
+        [FRAME] "Link preview card" #3:21561 template=EL-add45303
+          [RECTANGLE] "Editorial thumbnail" #3:21562 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"4ca3212410b16063d74dfb31a5d4a563dbb6d9c5","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21563 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21564 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21565 template=EL-bb582553
+                [TEXT] #3:21566 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_0665b73a text="LAYERS"
+              [TEXT] #3:21567 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_a7c5ee22 text="The case for smaller component libraries"
+            [TEXT] #3:21568 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_0665b73a text="Design · Sep 08"
+        [FRAME] "Link preview card" #3:21569 template=EL-add45303
+          [RECTANGLE] "Editorial thumbnail" #3:21570 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"bb1dd669c12d5b6e28b7d951269d09c24e8c1bff","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21571 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21572 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21573 template=EL-bb582553
+                [TEXT] #3:21574 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_0665b73a text="FORM JOURNAL"
+                [IMAGE-SVG] "heart" #3:22465 template=EL-494805ba
+              [TEXT] #3:21576 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_a7c5ee22 text="Quiet hierarchy in interface design"
+            [TEXT] #3:21577 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_0665b73a text="Favorites · Aug 30"

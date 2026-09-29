@@ -1,0 +1,58 @@
+  [FRAME] "Backup & restore · dark" #3:21953 template=EL-c7b795bf
+    [FRAME] "Android status" #3:21954 template=EL-2fb66994
+      [TEXT] #3:21955 template=EL-55e4357a
+      [FRAME] "System indicators" #3:21956 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22711 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22714 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22717 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21960 template=EL-373c9615
+      [FRAME] "Title group" #3:21961 template=EL-5efdc068
+        [IMAGE-SVG] "arrow-left" #3:22720 template=EL-d2f5d0a6
+        [TEXT] #3:21963 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_f4955406 text="Backup & restore"
+    [FRAME] "Backup content" #3:21964 layout={"mode":"column","alignSelf":"stretch","padding":"10px 24px 24px","alignItems":"stretch","gap":"18px","sizing":{"horizontal":"fill","vertical":"fill"}}
+      [FRAME] "Backup hero" #3:21965 layout={"mode":"column","alignSelf":"stretch","padding":"20px","justifyContent":"space-between","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":198}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(38, 62, 51, 1) 0%, rgba(39, 49, 44, 1) 100%)"}] borderRadius=30px
+        [FRAME] "File illustration" #3:21966 template=EL-bb582553
+          [FRAME] "Vault file" #3:21967 layout={"mode":"column","padding":"14px","justifyContent":"space-between","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":83.38,"height":94.29}} fills=fill_c9a34e29 borderRadius=18px
+            [IMAGE-SVG] "link-2" #3:22723 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":26,"height":26}}
+            [TEXT] #3:21969 layout=layout_177c5efc fills=fill_48f42ab5 textStyle=style_b9dbba5d text=".CLIPPR"
+          [FRAME] "Backup direction" #3:21970 layout={"mode":"column","alignItems":"center","gap":"5px","sizing":{"horizontal":"hug","vertical":"hug"}}
+            [IMAGE-SVG] "arrow-right" #3:22726 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":28,"height":28}}
+            [TEXT] #3:21972 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_5e4cc8c6 text="LOCAL FILE"
+          [FRAME] "Device folder" #3:21973 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":83.38,"height":94.29}} fills=["#3A493F"] borderRadius=18px
+            [IMAGE-SVG] "folder-lock" #3:22729 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":36.83,"height":36.83}}
+        [FRAME] "Backup hero copy" #3:21975 template=EL-5473bef8
+          [TEXT] #3:21976 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_e41a7ecd text="Portable, encrypted, yours."
+          [TEXT] #3:21977 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle={"fontFamily":"Inter","fontStyle":"Regular","fontWeight":400,"fontSize":11,"lineHeight":"1.4em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Export one encrypted file to storage you choose. Clippr never uploads it."
+      [FRAME] "Backup status" #3:21978 layout={"mode":"row","alignSelf":"stretch","padding":"15px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_afe269e4 strokes=fill_33bb5cbd strokeWeight=1px borderRadius=24px
+        [FRAME] "Status icon" #3:21979 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":42,"height":42}} fills=fill_ff7c2e7b borderRadius=13px
+          [IMAGE-SVG] "check" #3:22732 template=EL-a73b2a19
+        [FRAME] "Status information" #3:21981 template=EL-eca96ef6
+          [TEXT] #3:21982 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_8d922e75 text="Backup is up to date"
+          [TEXT] #3:21983 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_0665b73a text="Sep 24, 2026 · 161 links · 48.2 MB"
+      [FRAME] "Backup actions" #3:21984 template=EL-7e8f3d26
+        [FRAME] "Button" #3:21985 template=EL-b50a1607
+          [IMAGE-SVG] "archive" #3:22735 template=EL-b1d338df
+          [TEXT] #3:21987 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_43426335 text="Create backup"
+        [FRAME] "Button" #3:21988 layout=layout_ae9c81b6 fills=fill_afe269e4 strokes=fill_33bb5cbd strokeWeight=1px borderRadius=24px
+          [IMAGE-SVG] "file-up" #3:22738 template=EL-b1d338df
+          [TEXT] #3:21990 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_43426335 text="Restore from file"
+      [FRAME] "Backup preferences" #3:21991 template=EL-94ff967b
+        [FRAME] "Include previews" #3:21992 template=EL-48f269d1
+          [FRAME] "Preference copy" #3:21993 template=EL-bf569b8f
+            [TEXT] #3:21994 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_defc74b3 text="Include preview images"
+            [TEXT] #3:21995 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_b9dbba5d text="Adds 42.6 MB"
+          [FRAME] "Switch" #3:21996 template=EL-c9ccc51a
+            [FRAME] "Thumb" #3:21997 template=EL-a21a8af2
+        [FRAME] "Encrypted file" #3:21998 template=EL-48f269d1
+          [FRAME] "Preference copy" #3:21999 template=EL-bf569b8f
+            [TEXT] #3:22000 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_defc74b3 text="Encryption"
+            [TEXT] #3:22001 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_b9dbba5d text="Protected with your device PIN"
+          [IMAGE-SVG] "lock-keyhole" #3:22741 template=EL-f652840d
+      [FRAME] "Recent backups" #3:22003 layout={"mode":"column","alignSelf":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [TEXT] #3:22004 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_c487cf45 text="RECENT BACKUPS"
+        [FRAME] "Backup file" #3:22005 layout={"mode":"row","alignSelf":"stretch","padding":"13px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_afe269e4 borderRadius=16px
+          [IMAGE-SVG] "file-archive" #3:22744 template=EL-a73b2a19
+          [FRAME] "File information" #3:22007 template=EL-12a11ae8
+            [TEXT] #3:22008 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_c487cf45 text="clippr-backup-2026-09-24"
+            [TEXT] #3:22009 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_b9dbba5d text="Downloads · 48.2 MB"
+          [IMAGE-SVG] "more-horizontal" #3:22747 template=EL-f652840d

@@ -1,0 +1,360 @@
+{
+  "theme": {
+    "dark": {
+      "background": "#101613",
+      "surface": "#19221E",
+      "surfaceElevated": "#263E33",
+      "surfaceMuted": "#304038",
+      "surfaceBorder": "#33BB5CBD",
+      "accent": "#87B69D",
+      "accentDark": "#315846",
+      "textPrimary": "#EDF3EF",
+      "textSecondary": "#AAB6AF",
+      "textMuted": "#68776F",
+      "textInverse": "#101613",
+      "white": "#FFFFFF",
+      "danger": "#FF5C5C",
+      "dangerSurface": "#3A1E1E"
+    },
+    "light": {
+      "background": "#F8FAF9",
+      "surface": "#FFFFFF",
+      "surfaceElevated": "#EDF4F0",
+      "surfaceBorder": "#E2EBE5",
+      "accent": "#26573F",
+      "textPrimary": "#16211B",
+      "textSecondary": "#607268",
+      "textMuted": "#8D9F95"
+    }
+  },
+  "typography": {
+    "families": {
+      "display": "DM Sans",
+      "body": "Inter"
+    },
+    "styles": [
+      {
+        "name": "style_c487cf45",
+        "family": "Inter",
+        "weight": "400",
+        "size": 12,
+        "style": "Regular"
+      },
+      {
+        "name": "style_f4955406",
+        "family": "DM Sans",
+        "weight": "700",
+        "size": 20,
+        "style": "Bold"
+      },
+      {
+        "name": "style_b9dbba5d",
+        "family": "Inter",
+        "weight": "400",
+        "size": 10,
+        "style": "Regular"
+      },
+      {
+        "name": "style_5e4cc8c6",
+        "family": "Inter",
+        "weight": "700",
+        "size": 10,
+        "style": "Bold"
+      },
+      {
+        "name": "style_e41a7ecd",
+        "family": "DM Sans",
+        "weight": "400",
+        "size": 20,
+        "style": "Regular"
+      },
+      {
+        "name": "style_8d922e75",
+        "family": "Inter",
+        "weight": "700",
+        "size": 14,
+        "style": "Bold"
+      },
+      {
+        "name": "style_0665b73a",
+        "family": "Inter",
+        "weight": "400",
+        "size": 11,
+        "style": "Regular"
+      },
+      {
+        "name": "style_43426335",
+        "family": "Inter",
+        "weight": "700",
+        "size": 15,
+        "style": "Bold"
+      },
+      {
+        "name": "style_defc74b3",
+        "family": "Inter",
+        "weight": "400",
+        "size": 13,
+        "style": "Regular"
+      },
+      {
+        "name": "style_a8d7ffcb",
+        "family": "DM Sans",
+        "weight": "700",
+        "size": 28,
+        "style": "Bold"
+      },
+      {
+        "name": "style_83520cd5",
+        "family": "DM Sans",
+        "weight": "400",
+        "size": 16,
+        "style": "Regular"
+      },
+      {
+        "name": "style_cae0595d",
+        "family": "Inter",
+        "weight": "400",
+        "size": 11,
+        "style": "Regular"
+      },
+      {
+        "name": "style_d6226fef",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      },
+      {
+        "name": "style_016da0d2",
+        "family": "Inter",
+        "weight": "400",
+        "size": 11,
+        "style": "Regular"
+      },
+      {
+        "name": "style_eaa2436b",
+        "family": "Inter",
+        "weight": "700",
+        "size": 11,
+        "style": "Bold"
+      },
+      {
+        "name": "style_66c34925",
+        "family": "Inter",
+        "weight": "500",
+        "size": 11,
+        "style": "Medium"
+      },
+      {
+        "name": "style_a7c5ee22",
+        "family": "DM Sans",
+        "weight": "700",
+        "size": 14,
+        "style": "Bold"
+      },
+      {
+        "name": "style_02d97395",
+        "family": "Inter",
+        "weight": "400",
+        "size": 15,
+        "style": "Regular"
+      },
+      {
+        "name": "style_961e93e4",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      },
+      {
+        "name": "style_e995e5c4",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      },
+      {
+        "name": "style_d5123ae4",
+        "family": "Inter",
+        "weight": "600",
+        "size": 11,
+        "style": "Semi Bold"
+      },
+      {
+        "name": "style_7f0e5c40",
+        "family": "Inter",
+        "weight": "700",
+        "size": 13,
+        "style": "Bold"
+      },
+      {
+        "name": "style_21c6e633",
+        "family": "DM Sans",
+        "weight": "400",
+        "size": 27,
+        "style": "Regular"
+      },
+      {
+        "name": "style_1f631242",
+        "family": "DM Sans",
+        "weight": "700",
+        "size": 18,
+        "style": "Bold"
+      },
+      {
+        "name": "style_20f9bdbf",
+        "family": "DM Sans",
+        "weight": "700",
+        "size": 16,
+        "style": "Bold"
+      },
+      {
+        "name": "style_65ab133a",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      },
+      {
+        "name": "style_ff4c4c16",
+        "family": "Inter",
+        "weight": "600",
+        "size": 14,
+        "style": "Semi Bold"
+      },
+      {
+        "name": "style_8219f578",
+        "family": "Inter",
+        "weight": "400",
+        "size": 12,
+        "style": "Regular"
+      },
+      {
+        "name": "style_87fdb1ca",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      },
+      {
+        "name": "style_2edf0bce",
+        "family": "Inter",
+        "weight": "500",
+        "size": 14,
+        "style": "Medium"
+      },
+      {
+        "name": "style_12f1d2c3",
+        "family": "Inter",
+        "weight": "600",
+        "size": 14,
+        "style": "Semi Bold"
+      },
+      {
+        "name": "style_605d919e",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      },
+      {
+        "name": "style_c93a9ed4",
+        "family": "Inter",
+        "weight": "500",
+        "size": 14,
+        "style": "Medium"
+      },
+      {
+        "name": "style_a2e097fd",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      },
+      {
+        "name": "style_afbc6420",
+        "family": "Inter",
+        "weight": "500",
+        "size": 13,
+        "style": "Medium"
+      },
+      {
+        "name": "style_465bf818",
+        "family": "Inter",
+        "weight": "500",
+        "size": 20,
+        "style": "Medium"
+      },
+      {
+        "name": "style_88a1e103",
+        "family": "Inter",
+        "weight": "500",
+        "size": 14,
+        "style": "Medium"
+      },
+      {
+        "name": "style_abf6ebad",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      },
+      {
+        "name": "style_a04af34e",
+        "family": "Inter",
+        "weight": "500",
+        "size": 12,
+        "style": "Medium"
+      },
+      {
+        "name": "style_7a2cf8f0",
+        "family": "Inter",
+        "weight": "400",
+        "size": 12,
+        "style": "Regular"
+      },
+      {
+        "name": "style_11b61523",
+        "family": "Inter",
+        "weight": "600",
+        "size": 14,
+        "style": "Semi Bold"
+      },
+      {
+        "name": "style_ee7aa1f2",
+        "family": "Inter",
+        "weight": "400",
+        "size": 10,
+        "style": "Regular"
+      },
+      {
+        "name": "style_c3b0653e",
+        "family": "Inter",
+        "weight": "600",
+        "size": 28,
+        "style": "Semi Bold"
+      },
+      {
+        "name": "style_797ed8d9",
+        "family": "Inter",
+        "weight": "500",
+        "size": 12,
+        "style": "Medium"
+      },
+      {
+        "name": "style_d5cd9b07",
+        "family": "Inter",
+        "weight": "500",
+        "size": 14,
+        "style": "Medium"
+      },
+      {
+        "name": "style_e2e2c2f7",
+        "family": "Inter",
+        "weight": "400",
+        "size": 14,
+        "style": "Regular"
+      }
+    ]
+  }
+}

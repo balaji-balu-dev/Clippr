@@ -1,0 +1,28 @@
+  [FRAME] "Biometric lock · dark" #3:20855 template=EL-c7b795bf
+    [FRAME] "Android status" #3:20856 template=EL-2fb66994
+      [TEXT] #3:20857 template=EL-55e4357a
+      [FRAME] "System indicators" #3:20858 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22078 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22081 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22084 template=EL-f652840d
+    [FRAME] "Authentication" #3:20862 layout={"mode":"column","alignSelf":"stretch","padding":"46px 28px 30px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fill"}}
+      [FRAME] "Brand" #3:20863 template=EL-5d197b60
+        [FRAME] "Clippr mark" #3:20864 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":36,"height":36}} fills=fill_05112365 effects=effect_6ee9f108 borderRadius=12px
+          [FRAME] "Clipped link" #3:20865 layout={"mode":"row","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22.4,"height":19.19}} strokes=fill_658ab2fa strokeWeight=3px borderRadius=100px
+            [ELLIPSE] "Private point" #3:20866 template=EL-d07d30f8
+        [TEXT] #3:20867 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_e41a7ecd text="Clippr"
+      [FRAME] "Biometric prompt" #3:20868 layout={"mode":"column","alignSelf":"stretch","alignItems":"center","gap":"28px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "Fingerprint halo" #3:20869 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":158,"height":158}} fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 50% 50%, rgba(135, 182, 157, 0.22) 0%, rgba(135, 182, 157, 0) 100%)"}] borderRadius=100px
+          [FRAME] "Fingerprint surface" #3:20870 layout=layout_40aa684b fills=fill_1d995e9d strokes=fill_33bb5cbd strokeWeight=1px borderRadius=32px
+            [IMAGE-SVG] "fingerprint" #3:22087 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":45,"height":45}}
+        [FRAME] "Prompt copy" #3:20872 layout={"mode":"column","alignSelf":"stretch","alignItems":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [TEXT] #3:20873 layout=layout_177c5efc fills=fill_3d7778d4 textStyle={"fontFamily":"DM Sans","fontStyle":"Regular","fontWeight":400,"fontSize":28,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Unlock your vault"
+          [TEXT] #3:20874 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":292}} fills=fill_9dab4a2b textStyle=style_65ab133a text="Your links stay on this device. Confirm it’s you to open Clippr."
+        [FRAME] "Privacy note" #3:20875 layout={"mode":"row","padding":"10px 14px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_ff7c2e7b borderRadius=100px
+          [IMAGE-SVG] "shield-check" #3:22090 template=EL-d40fb4e5
+          [TEXT] #3:20877 layout=layout_177c5efc fills=fill_d8631191 textStyle=style_0665b73a text="Biometrics never leave Android"
+      [FRAME] "Authentication actions" #3:20878 layout=layout_222d185b
+        [FRAME] "Button" #3:20879 template=EL-b50a1607
+          [IMAGE-SVG] "fingerprint" #3:22093 template=EL-b1d338df
+          [TEXT] #3:20881 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_43426335 text="Use fingerprint"
+        [TEXT] #3:20882 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle={"fontFamily":"Inter","fontStyle":"Regular","fontWeight":400,"fontSize":13,"textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="Use device PIN instead"

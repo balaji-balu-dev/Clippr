@@ -1,0 +1,97 @@
+  [FRAME] "Settings · light" #3:21759 template=EL-e9bed0d5
+    [FRAME] "Android status" #3:21760 template=EL-2fb66994
+      [TEXT] #3:21761 template=EL-a5c303b8
+      [FRAME] "System indicators" #3:21762 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22573 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22576 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22579 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21766 template=EL-373c9615
+      [FRAME] "Title group" #3:21767 template=EL-5efdc068
+        [TEXT] #3:21768 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_a8d7ffcb text="Settings"
+    [FRAME] "Settings content" #3:21769 template=EL-589f2f6a
+      [FRAME] "Vault summary" #3:21770 layout=layout_26d79724 fills=fill_82306aee borderRadius=24px
+        [FRAME] "Vault icon" #3:21771 layout=layout_7d8fad62 fills=fill_76dca3bd borderRadius=15px
+          [IMAGE-SVG] "shield-check" #3:22582 template=EL-5abafd35
+        [FRAME] "Vault information" #3:21773 template=EL-eca96ef6
+          [TEXT] #3:21774 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_83520cd5 text="Private vault"
+          [TEXT] #3:21775 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="161 links · stored only on this device"
+        [IMAGE-SVG] "check-circle-2" #3:22585 template=EL-a73b2a19
+      [FRAME] "Settings section" #3:21777 template=EL-467ca15a
+        [TEXT] #3:21778 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_cae0595d text="Privacy & security"
+        [FRAME] "Settings group" #3:21779 template=EL-b1593741
+          [FRAME] "Settings row" #3:21780 template=EL-0d75b083
+            [FRAME] "Setting icon" #3:21781 template=EL-36610c6b
+              [IMAGE-SVG] "fingerprint" #3:22588 template=EL-b1d338df
+            [FRAME] "Setting information" #3:21783 template=EL-f489842c
+              [TEXT] #3:21784 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_d6226fef text="App lock"
+              [TEXT] #3:21785 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_016da0d2 text="Fingerprint · locks after 1 minute"
+            [IMAGE-SVG] "chevron-right" #3:22591 template=EL-f652840d
+          [FRAME] "Settings row" #3:21787 template=EL-0d75b083
+            [FRAME] "Setting icon" #3:21788 template=EL-36610c6b
+              [IMAGE-SVG] "eye-off" #3:22594 template=EL-b1d338df
+            [FRAME] "Setting information" #3:21790 template=EL-f489842c
+              [TEXT] #3:21791 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_d6226fef text="Hide previews in recents"
+              [TEXT] #3:21792 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_016da0d2 text="On"
+            [IMAGE-SVG] "toggle-right" #3:22597 template=EL-f652840d
+      [FRAME] "Settings section" #3:21794 template=EL-467ca15a
+        [TEXT] #3:21795 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_cae0595d text="Your data"
+        [FRAME] "Settings group" #3:21796 template=EL-b1593741
+          [FRAME] "Settings row" #3:21797 template=EL-0d75b083
+            [FRAME] "Setting icon" #3:21798 template=EL-36610c6b
+              [IMAGE-SVG] "archive" #3:22600 template=EL-b1d338df
+            [FRAME] "Setting information" #3:21800 template=EL-f489842c
+              [TEXT] #3:21801 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_d6226fef text="Backup & restore"
+              [TEXT] #3:21802 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_016da0d2 text="Last backup Sep 24"
+            [IMAGE-SVG] "chevron-right" #3:22603 template=EL-f652840d
+          [FRAME] "Settings row" #3:21804 template=EL-0d75b083
+            [FRAME] "Setting icon" #3:21805 template=EL-36610c6b
+              [IMAGE-SVG] "trash-2" #3:22606 template=EL-b1d338df
+            [FRAME] "Setting information" #3:21807 template=EL-f489842c
+              [TEXT] #3:21808 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_d6226fef text="Trash"
+              [TEXT] #3:21809 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_016da0d2 text="4 links · auto-delete after 30 days"
+            [IMAGE-SVG] "chevron-right" #3:22609 template=EL-f652840d
+      [FRAME] "Settings section" #3:21811 template=EL-467ca15a
+        [TEXT] #3:21812 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_cae0595d text="Preferences"
+        [FRAME] "Settings group" #3:21813 template=EL-b1593741
+          [FRAME] "Settings row" #3:21814 template=EL-0d75b083
+            [FRAME] "Setting icon" #3:21815 template=EL-36610c6b
+              [IMAGE-SVG] "moon-star" #3:22612 template=EL-b1d338df
+            [FRAME] "Setting information" #3:21817 template=EL-f489842c
+              [TEXT] #3:21818 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_d6226fef text="Appearance"
+              [TEXT] #3:21819 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_016da0d2 text="Light theme"
+            [IMAGE-SVG] "chevron-right" #3:22615 template=EL-f652840d
+          [FRAME] "Settings row" #3:21821 template=EL-0d75b083
+            [FRAME] "Setting icon" #3:21822 template=EL-36610c6b
+              [IMAGE-SVG] "folder-heart" #3:22618 template=EL-b1d338df
+            [FRAME] "Setting information" #3:21824 template=EL-f489842c
+              [TEXT] #3:21825 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_d6226fef text="Default folder"
+              [TEXT] #3:21826 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_016da0d2 text="Inbox"
+            [IMAGE-SVG] "chevron-right" #3:22621 template=EL-f652840d
+          [FRAME] "Settings row" #3:21828 template=EL-0d75b083
+            [FRAME] "Setting icon" #3:21829 template=EL-36610c6b
+              [IMAGE-SVG] "layout-grid" #3:22624 template=EL-b1d338df
+            [FRAME] "Setting information" #3:21831 template=EL-f489842c
+              [TEXT] #3:21832 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_d6226fef text="Link layout"
+              [TEXT] #3:21833 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_016da0d2 text="Comfortable list"
+            [IMAGE-SVG] "chevron-right" #3:22627 template=EL-f652840d
+      [FRAME] "About" #3:21835 template=EL-ffc1b4d2
+        [TEXT] #3:21836 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="Clippr 1.0.0"
+        [TEXT] #3:21837 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_0665b73a text="Built for your pocket, not the cloud."
+    [FRAME] "Bottom navigation · Floating slot" #17:283 template=EL-df83c028
+      [FRAME] "Bottom navigation · Floating" #17:284 template=EL-23bb3d27
+        [FRAME] "Navigation item" #17:285 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:286 template=EL-33ca8e94
+            [IMAGE-SVG] "house" #17:287 template=EL-b1d338df
+          [TEXT] #17:289 template=EL-60d205cc
+        [FRAME] "Navigation item" #17:290 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:291 template=EL-4d3fe1f2
+            [IMAGE-SVG] "folder" #17:292 template=EL-b1d338df
+          [TEXT] #17:294 template=EL-d5b335f0
+        [FRAME] "Navigation item" #17:295 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:296 template=EL-4d3fe1f2
+            [IMAGE-SVG] "heart" #17:297 template=EL-b1d338df
+          [TEXT] #17:299 template=EL-1c1e2c4f
+        [FRAME] "Navigation item" #17:300 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:301 template=EL-4d3fe1f2
+            [IMAGE-SVG] "settings" #17:302 template=EL-b1d338df
+          [TEXT] #17:304 template=EL-a2ff7cfa

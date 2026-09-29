@@ -1,0 +1,91 @@
+  [FRAME] "Folder detail · Design" #3:21174 template=EL-e6a967ca
+    [FRAME] "Android status" #3:21175 template=EL-2fb66994
+      [TEXT] #3:21176 template=EL-55e4357a
+      [FRAME] "System indicators" #3:21177 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22249 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22252 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22255 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21181 template=EL-373c9615
+      [FRAME] "Title group" #3:21182 template=EL-5efdc068
+        [IMAGE-SVG] "arrow-left" #3:22258 template=EL-d2f5d0a6
+        [TEXT] #3:21184 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_f4955406 text="Design"
+      [FRAME] "App bar action" #3:21185 template=EL-cdcaccf2
+        [IMAGE-SVG] "ellipsis-vertical" #3:22261 template=EL-a73b2a19
+    [FRAME] "Folder detail content" #3:21187 template=EL-589f2f6a
+      [FRAME] "Folder header" #3:21188 layout={"mode":"row","alignSelf":"stretch","alignItems":"center","gap":"14px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "Folder icon" #3:21189 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":62,"height":62}} fills=fill_fba4f930 borderRadius=20px
+          [IMAGE-SVG] "palette" #3:22264 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":29,"height":29}}
+        [FRAME] "Folder information" #3:21191 layout={"mode":"column","gap":"4px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [TEXT] #3:21192 layout=layout_177c5efc fills=fill_3d7778d4 textStyle={"fontFamily":"DM Sans","fontStyle":"Regular","fontWeight":400,"fontSize":24,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Design"
+          [TEXT] #3:21193 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_c487cf45 text="31 links · updated today"
+        [FRAME] "Add link" #3:21194 layout=layout_e4ef4421 fills=fill_05112365 borderRadius=16px
+          [IMAGE-SVG] "plus" #3:22267 template=EL-d2f5d0a6
+      [FRAME] "View controls" #3:21196 template=EL-bb582553
+        [FRAME] "Filter chips" #3:21197 layout={"mode":"row","gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}}
+          [FRAME] "Active filter" #3:21198 layout=layout_2ccac5f0 fills=fill_ff7c2e7b borderRadius=100px
+            [TEXT] #3:21199 layout=layout_177c5efc fills=fill_d8631191 textStyle=style_eaa2436b text="All links"
+          [FRAME] "Unread filter" #3:21200 layout=layout_2ccac5f0 fills=fill_afe269e4 borderRadius=100px
+            [TEXT] #3:21201 layout=layout_177c5efc fills=fill_9dab4a2b textStyle={"fontFamily":"Inter","fontStyle":"Semi Bold","fontWeight":600,"fontSize":11,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Unread · 8"
+        [FRAME] "Sort" #3:21202 template=EL-62387e23
+          [IMAGE-SVG] "arrow-down-up" #3:22270 template=EL-494805ba
+          [TEXT] #3:21204 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_0665b73a text="Newest"
+      [FRAME] "Folder links" #3:21205 template=EL-7e8f3d26
+        [FRAME] "Link preview card" #3:21206 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21207 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"594324cfca90efe5e746596673102958a7bf26e6","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21208 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21209 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21210 template=EL-bb582553
+                [TEXT] #3:21211 template=EL-0fd4786f
+                [IMAGE-SVG] "heart" #3:22273 template=EL-494805ba
+              [TEXT] #3:21213 template=EL-0c8f63c5
+            [TEXT] #3:21214 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Saved today · 6 min read"
+        [FRAME] "Link preview card" #3:21215 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21216 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"16ffe8c9b556f0bcdaec05ec4e174273482593d1","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21217 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21218 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21219 template=EL-bb582553
+                [TEXT] #3:21220 layout=layout_177c5efc fills=fill_05112365 textStyle=style_0665b73a text="FORM JOURNAL"
+              [TEXT] #3:21221 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_a7c5ee22 text="Why tactile interfaces still matter"
+            [TEXT] #3:21222 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Saved yesterday · 9 min read"
+        [FRAME] "Link preview card" #3:21223 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21224 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"31a5e43b91143391857289e9b689291d51bb898c","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21225 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21226 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21227 template=EL-bb582553
+                [TEXT] #3:21228 layout=layout_177c5efc fills=fill_05112365 textStyle=style_0665b73a text="TYPEWOLF"
+              [TEXT] #3:21229 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_a7c5ee22 text="A practical guide to editorial grids"
+            [TEXT] #3:21230 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Sep 24 · 12 min read"
+        [FRAME] "Link preview card" #3:21231 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21232 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"8d2f495b64a8112eb78f5837ea5891863dca32e2","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21233 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21234 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21235 template=EL-bb582553
+                [TEXT] #3:21236 layout=layout_177c5efc fills=fill_05112365 textStyle=style_0665b73a text="MATERIAL STUDIES"
+              [TEXT] #3:21237 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_a7c5ee22 text="Color as atmosphere, not decoration"
+            [TEXT] #3:21238 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Sep 21 · 5 min read"
+        [FRAME] "Link preview card" #3:21239 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21240 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"ed19cc9a6f319522cd03581ec91f6c753db34571","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21241 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21242 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21243 template=EL-bb582553
+                [TEXT] #3:21244 template=EL-f72f0b61
+              [TEXT] #3:21245 template=EL-784e5386
+            [TEXT] #3:21246 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Sep 18 · 7 min read"
+    [FRAME] "Bottom navigation · Floating slot" #17:122 template=EL-df83c028
+      [FRAME] "Bottom navigation · Floating" #17:123 template=EL-3689e716
+        [FRAME] "Navigation item" #17:124 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:125 template=EL-d5d61141
+            [IMAGE-SVG] "house" #17:126 template=EL-b1d338df
+          [TEXT] #17:128 template=EL-94b73735
+        [FRAME] "Navigation item" #17:129 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:130 template=EL-4d3fe1f2
+            [IMAGE-SVG] "folder" #17:131 template=EL-b1d338df
+          [TEXT] #17:133 template=EL-da2ff29f
+        [FRAME] "Navigation item" #17:134 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:135 template=EL-4d3fe1f2
+            [IMAGE-SVG] "heart" #17:136 template=EL-b1d338df
+          [TEXT] #17:138 template=EL-18e678c8
+        [FRAME] "Navigation item" #17:139 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:140 template=EL-4d3fe1f2
+            [IMAGE-SVG] "settings" #17:141 template=EL-b1d338df
+          [TEXT] #17:143 template=EL-c63d3093

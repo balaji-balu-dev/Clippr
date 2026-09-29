@@ -1,0 +1,89 @@
+  [FRAME] "Trash" #3:21667 template=EL-e9bed0d5
+    [FRAME] "Android status" #3:21668 template=EL-2fb66994
+      [TEXT] #3:21669 template=EL-a5c303b8
+      [FRAME] "System indicators" #3:21670 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22516 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22519 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22522 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21674 template=EL-373c9615
+      [FRAME] "Title group" #3:21675 template=EL-5efdc068
+        [IMAGE-SVG] "arrow-left" #3:22525 template=EL-d2f5d0a6
+        [TEXT] #3:21677 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_f4955406 text="Trash"
+      [TEXT] #3:21678 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_d6226fef text="Empty"
+    [FRAME] "Trash content" #3:21679 template=EL-589f2f6a
+      [FRAME] "Retention notice" #3:21680 layout={"mode":"row","alignSelf":"stretch","padding":"14px","alignItems":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_82306aee borderRadius=24px
+        [IMAGE-SVG] "clock-3" #3:22528 template=EL-a73b2a19
+        [TEXT] #3:21682 layout=layout_56d3c81c fills=fill_48f42ab5 textStyle={"fontFamily":"Inter","fontStyle":"Regular","fontWeight":400,"fontSize":12,"lineHeight":"1.4em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Deleted links stay here for 30 days. Restore anything with one tap."
+      [FRAME] "Trash summary" #3:21683 template=EL-ffc1b4d2
+        [TEXT] #3:21684 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_defc74b3 text="4 deleted links"
+        [TEXT] #3:21685 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="Recently deleted"
+      [FRAME] "Deleted links" #3:21686 template=EL-7e8f3d26
+        [FRAME] "Deleted link" #3:21687 template=EL-a93fbd29
+          [RECTANGLE] "Thumbnail" #3:21688 layout=layout_c15f537a fills=[{"type":"IMAGE","imageRef":"027f517b4ad12efe550c7989c07302512cf83f0e","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] opacity=0.7200000286102295 borderRadius=12px
+          [FRAME] "Deleted link information" #3:21689 template=EL-a8997342
+            [FRAME] "Deleted link copy" #3:21690 template=EL-5473bef8
+              [TEXT] #3:21691 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_5e4cc8c6 text="WAYFARER"
+              [TEXT] #3:21692 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_8d922e75 text="A better packing list for long weekends"
+            [TEXT] #3:21693 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_b9dbba5d text="Permanently deletes in 28 days"
+          [FRAME] "Deleted link actions" #3:21694 template=EL-bd292f91
+            [FRAME] "Restore" #3:21695 template=EL-bfb7ecbd
+              [IMAGE-SVG] "rotate-ccw" #3:22531 template=EL-494805ba
+            [FRAME] "Delete forever" #3:21697 template=EL-828cb588
+              [IMAGE-SVG] "x" #3:22534 template=EL-494805ba
+        [FRAME] "Deleted link" #3:21699 template=EL-a93fbd29
+          [RECTANGLE] "Thumbnail" #3:21700 layout=layout_c15f537a fills=[{"type":"IMAGE","imageRef":"2c3771b8990f6a9227680c9a515d306739de9b9a","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] opacity=0.7200000286102295 borderRadius=12px
+          [FRAME] "Deleted link information" #3:21701 template=EL-a8997342
+            [FRAME] "Deleted link copy" #3:21702 template=EL-5473bef8
+              [TEXT] #3:21703 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_5e4cc8c6 text="STUDIO NOTES"
+              [TEXT] #3:21704 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_8d922e75 text="Reference boards that stay useful"
+            [TEXT] #3:21705 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_b9dbba5d text="Permanently deletes in 21 days"
+          [FRAME] "Deleted link actions" #3:21706 template=EL-bd292f91
+            [FRAME] "Restore" #3:21707 template=EL-bfb7ecbd
+              [IMAGE-SVG] "rotate-ccw" #3:22537 template=EL-494805ba
+            [FRAME] "Delete forever" #3:21709 template=EL-828cb588
+              [IMAGE-SVG] "x" #3:22540 template=EL-494805ba
+        [FRAME] "Deleted link" #3:21711 template=EL-a93fbd29
+          [RECTANGLE] "Thumbnail" #3:21712 layout=layout_c15f537a fills=[{"type":"IMAGE","imageRef":"78174d3ccdc05feb5fb32316caf77e577d195879","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] opacity=0.7200000286102295 borderRadius=12px
+          [FRAME] "Deleted link information" #3:21713 template=EL-a8997342
+            [FRAME] "Deleted link copy" #3:21714 template=EL-5473bef8
+              [TEXT] #3:21715 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_5e4cc8c6 text="TABLE NOTES"
+              [TEXT] #3:21716 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_8d922e75 text="One-pan tomatoes and white beans"
+            [TEXT] #3:21717 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_b9dbba5d text="Permanently deletes in 14 days"
+          [FRAME] "Deleted link actions" #3:21718 template=EL-bd292f91
+            [FRAME] "Restore" #3:21719 template=EL-bfb7ecbd
+              [IMAGE-SVG] "rotate-ccw" #3:22543 template=EL-494805ba
+            [FRAME] "Delete forever" #3:21721 template=EL-828cb588
+              [IMAGE-SVG] "x" #3:22546 template=EL-494805ba
+        [FRAME] "Deleted link" #3:21723 template=EL-a93fbd29
+          [RECTANGLE] "Thumbnail" #3:21724 layout=layout_c15f537a fills=[{"type":"IMAGE","imageRef":"d6bac29dcf4f1fff274e058d51ac6df0ec999c07","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] opacity=0.7200000286102295 borderRadius=12px
+          [FRAME] "Deleted link information" #3:21725 template=EL-a8997342
+            [FRAME] "Deleted link copy" #3:21726 template=EL-5473bef8
+              [TEXT] #3:21727 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_5e4cc8c6 text="OBJECTS"
+              [TEXT] #3:21728 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_8d922e75 text="A short history of the reading chair"
+            [TEXT] #3:21729 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_b9dbba5d text="Permanently deletes in 6 days"
+          [FRAME] "Deleted link actions" #3:21730 template=EL-bd292f91
+            [FRAME] "Restore" #3:21731 template=EL-bfb7ecbd
+              [IMAGE-SVG] "rotate-ccw" #3:22549 template=EL-494805ba
+            [FRAME] "Delete forever" #3:21733 template=EL-828cb588
+              [IMAGE-SVG] "x" #3:22552 template=EL-494805ba
+      [FRAME] "Button" #3:21735 layout=layout_ae9c81b6 fills=fill_04432188 strokes=fill_c72a6a2e strokeWeight=1px borderRadius=24px
+        [IMAGE-SVG] "trash-2" #3:22555 template=EL-b1d338df
+        [TEXT] #3:21737 layout=layout_177c5efc fills=fill_c72a6a2e textStyle=style_43426335 text="Empty trash"
+    [FRAME] "Bottom navigation · Floating slot" #17:214 template=EL-df83c028
+      [FRAME] "Bottom navigation · Floating" #17:215 template=EL-23bb3d27
+        [FRAME] "Navigation item" #17:216 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:217 template=EL-33ca8e94
+            [IMAGE-SVG] "house" #17:218 template=EL-b1d338df
+          [TEXT] #17:220 template=EL-60d205cc
+        [FRAME] "Navigation item" #17:221 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:222 template=EL-4d3fe1f2
+            [IMAGE-SVG] "folder" #17:223 template=EL-b1d338df
+          [TEXT] #17:225 template=EL-d5b335f0
+        [FRAME] "Navigation item" #17:226 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:227 template=EL-4d3fe1f2
+            [IMAGE-SVG] "heart" #17:228 template=EL-b1d338df
+          [TEXT] #17:230 template=EL-1c1e2c4f
+        [FRAME] "Navigation item" #17:231 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:232 template=EL-4d3fe1f2
+            [IMAGE-SVG] "settings" #17:233 template=EL-b1d338df
+          [TEXT] #17:235 template=EL-a2ff7cfa

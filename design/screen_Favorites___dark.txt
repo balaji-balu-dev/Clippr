@@ -1,0 +1,82 @@
+  [FRAME] "Favorites · dark" #3:21582 template=EL-e6a967ca
+    [FRAME] "Android status" #3:21583 template=EL-2fb66994
+      [TEXT] #3:21584 template=EL-55e4357a
+      [FRAME] "System indicators" #3:21585 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22471 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22474 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22477 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21589 template=EL-373c9615
+      [FRAME] "Title group" #3:21590 template=EL-5efdc068
+        [TEXT] #3:21591 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_a8d7ffcb text="Favorites"
+      [FRAME] "App bar action" #3:21592 template=EL-cdcaccf2
+        [IMAGE-SVG] "search" #3:22480 template=EL-a73b2a19
+    [FRAME] "Favorites content" #3:21594 template=EL-589f2f6a
+      [FRAME] "Favorite summary" #3:21595 template=EL-bb582553
+        [TEXT] #3:21596 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_defc74b3 text="24 links you love"
+        [FRAME] "Folder filter" #3:21597 layout={"mode":"row","padding":"8px 11px","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_afe269e4 borderRadius=100px
+          [IMAGE-SVG] "sliders-horizontal" #3:22483 template=EL-522202e5
+          [TEXT] #3:21599 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_0665b73a text="All folders"
+      [FRAME] "Favorite links" #3:21600 template=EL-7e8f3d26
+        [FRAME] "Link preview card" #3:21601 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21602 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"cc847ae704ea96de3ecbccf6cb35f643213134fa","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21603 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21604 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21605 template=EL-bb582553
+                [TEXT] #3:21606 template=EL-0fd4786f
+                [IMAGE-SVG] "heart" #3:22486 template=EL-494805ba
+              [TEXT] #3:21608 template=EL-0c8f63c5
+            [TEXT] #3:21609 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Design · today"
+        [FRAME] "Link preview card" #3:21610 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21611 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"e87e3ed2a498c9d434f87cf072e6ef1d3ee207b8","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21612 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21613 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21614 template=EL-bb582553
+                [TEXT] #3:21615 template=EL-a40222c0
+                [IMAGE-SVG] "heart" #3:22489 template=EL-494805ba
+              [TEXT] #3:21617 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_a7c5ee22 text="A field guide to slow weekends in Kyoto"
+            [TEXT] #3:21618 template=EL-fd98bff2
+        [FRAME] "Link preview card" #3:21619 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21620 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"eb599fc87bbb7fcb3fb4847b111a7769fcc3b45e","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21621 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21622 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21623 template=EL-bb582553
+                [TEXT] #3:21624 layout=layout_177c5efc fills=fill_05112365 textStyle=style_0665b73a text="TABLE NOTES"
+                [IMAGE-SVG] "heart" #3:22492 template=EL-494805ba
+              [TEXT] #3:21626 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_a7c5ee22 text="Miso butter mushrooms on toast"
+            [TEXT] #3:21627 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Recipes · Sep 23"
+        [FRAME] "Link preview card" #3:21628 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21629 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"e90273cf9520ce68b047d605dfed10938cece712","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21630 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21631 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21632 template=EL-bb582553
+                [TEXT] #3:21633 template=EL-f72f0b61
+                [IMAGE-SVG] "heart" #3:22495 template=EL-494805ba
+              [TEXT] #3:21635 template=EL-784e5386
+            [TEXT] #3:21636 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Design · Sep 18"
+        [FRAME] "Link preview card" #3:21637 template=EL-a1eb40ea
+          [RECTANGLE] "Editorial thumbnail" #3:21638 layout=layout_58784c29 fills=[{"type":"IMAGE","imageRef":"8a138671efbb657c6c7e7feb464c0c636ac94f38","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=12px
+          [FRAME] "Link information" #3:21639 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21640 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21641 template=EL-bb582553
+                [TEXT] #3:21642 layout=layout_177c5efc fills=fill_05112365 textStyle=style_0665b73a text="OFFLINE"
+                [IMAGE-SVG] "heart" #3:22498 template=EL-494805ba
+              [TEXT] #3:21644 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_a7c5ee22 text="How to read more without tracking it"
+            [TEXT] #3:21645 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Read later · Sep 14"
+    [FRAME] "Bottom navigation · Floating slot" #17:237 template=EL-df83c028
+      [FRAME] "Bottom navigation · Floating" #17:238 template=EL-3689e716
+        [FRAME] "Navigation item" #17:239 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:240 template=EL-d5d61141
+            [IMAGE-SVG] "house" #17:241 template=EL-b1d338df
+          [TEXT] #17:243 template=EL-94b73735
+        [FRAME] "Navigation item" #17:244 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:245 template=EL-4d3fe1f2
+            [IMAGE-SVG] "folder" #17:246 template=EL-b1d338df
+          [TEXT] #17:248 template=EL-da2ff29f
+        [FRAME] "Navigation item" #17:249 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:250 template=EL-4d3fe1f2
+            [IMAGE-SVG] "heart" #17:251 template=EL-b1d338df
+          [TEXT] #17:253 template=EL-18e678c8
+        [FRAME] "Navigation item" #17:254 template=EL-a34f3e9d
+          [FRAME] "Icon container" #17:255 template=EL-4d3fe1f2
+            [IMAGE-SVG] "settings" #17:256 template=EL-b1d338df
+          [TEXT] #17:258 template=EL-c63d3093

@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "clipprvault",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/privacy",
+        "destination": "/privacy.html"
+      }
+    ]
+  }
+}

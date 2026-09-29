@@ -1,0 +1,61 @@
+  [FRAME] "Link detail" #3:21384 template=EL-b2a41849
+    [FRAME] "Android status" #3:21385 template=EL-2fb66994
+      [TEXT] #3:21386 template=EL-a5c303b8
+      [FRAME] "System indicators" #3:21387 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22363 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22366 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22369 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21391 template=EL-373c9615
+      [FRAME] "Title group" #3:21392 template=EL-5efdc068
+        [IMAGE-SVG] "arrow-left" #3:22372 template=EL-d2f5d0a6
+        [TEXT] #3:21394 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_f4955406 text="Link"
+      [FRAME] "App bar action" #3:21395 template=EL-921509ca
+        [IMAGE-SVG] "ellipsis-vertical" #3:22375 template=EL-a73b2a19
+    [FRAME] "Link detail content" #3:21397 template=EL-fe8a28fc
+      [FRAME] "Link hero" #3:21398 layout={"mode":"column","alignSelf":"stretch","padding":"18px","justifyContent":"space-between","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":256}} effects=effect_6ee9f108 borderRadius=30px
+        [RECTANGLE] "Editorial image" #3:21399 layout=layout_8f645ba1 fills=[{"type":"IMAGE","imageRef":"49fc81d29b98ff3b3ce5f38971bc54688dca9dd8","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+        [RECTANGLE] "Image overlay" #3:21400 layout=layout_8f645ba1 fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(0, 0, 0, 0.03) 15%, rgba(9, 21, 14, 0.79) 100%)"}]
+        [FRAME] "Hero actions" #3:21401 template=EL-ffc1b4d2
+          [FRAME] "Domain badge" #3:21402 layout={"mode":"row","padding":"7px 10px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_7bf5f520 borderRadius=100px
+            [TEXT] #3:21403 layout=layout_177c5efc fills=fill_48f42ab5 textStyle=style_b9dbba5d text="KIN & FORM"
+          [FRAME] "Favorite status" #3:21404 layout=layout_07da14cc fills=fill_7bf5f520 borderRadius=100px
+            [IMAGE-SVG] "heart" #3:22378 template=EL-f652840d
+        [FRAME] "Hero copy" #3:21406 layout={"mode":"column","alignSelf":"stretch","padding":"10px","gap":"7px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_92c7b4a3 borderRadius=12px
+          [TEXT] #3:21407 layout=layout_56d3c81c fills=fill_658ab2fa textStyle={"fontFamily":"DM Sans","fontStyle":"Regular","fontWeight":400,"fontSize":26,"lineHeight":"1.12em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="The quiet architecture of a reading room"
+          [TEXT] #3:21408 layout=layout_177c5efc fills=fill_c9a34e29 textStyle=style_c487cf45 text="By Mara Ellis · 8 min read"
+      [FRAME] "Link metadata" #3:21409 template=EL-bb582553
+        [FRAME] "Folder badge" #3:21410 layout={"mode":"row","padding":"8px 11px","gap":"7px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_82306aee borderRadius=100px
+          [IMAGE-SVG] "folder" #3:22381 template=EL-522202e5
+          [TEXT] #3:21412 layout=layout_177c5efc fills=fill_48f42ab5 textStyle=style_eaa2436b text="Design"
+        [TEXT] #3:21413 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="Saved today at 9:24"
+      [TEXT] #3:21414 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_e995e5c4 text="A study in natural light, tactile materials, and the rooms that make slowing down feel effortless."
+      [FRAME] "Button" #3:21415 template=EL-4e098350
+        [IMAGE-SVG] "external-link" #3:22384 template=EL-b1d338df
+        [TEXT] #3:21417 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_43426335 text="Open link"
+      [FRAME] "Link actions" #3:21418 layout={"mode":"column","alignSelf":"stretch","padding":"2px 0px","alignItems":"stretch","gap":"16px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "Action row" #3:21419 template=EL-d1ac142c
+          [FRAME] "Action" #3:21420 template=EL-c482391f
+            [FRAME] "Action icon" #3:21421 template=EL-5b0d0b98
+              [IMAGE-SVG] "copy" #3:22387 template=EL-93c1572c
+            [TEXT] #3:21423 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_d5123ae4 text="Copy"
+          [FRAME] "Action" #3:21424 template=EL-c482391f
+            [FRAME] "Action icon" #3:21425 template=EL-5b0d0b98
+              [IMAGE-SVG] "share-2" #3:22390 template=EL-93c1572c
+            [TEXT] #3:21427 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_d5123ae4 text="Share"
+          [FRAME] "Action" #3:21428 template=EL-c482391f
+            [FRAME] "Action icon" #3:21429 template=EL-5b0d0b98
+              [IMAGE-SVG] "pencil" #3:22393 template=EL-93c1572c
+            [TEXT] #3:21431 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_d5123ae4 text="Edit"
+        [FRAME] "Action row" #3:21432 template=EL-d1ac142c
+          [FRAME] "Action" #3:21433 template=EL-c482391f
+            [FRAME] "Action icon" #3:21434 template=EL-5b0d0b98
+              [IMAGE-SVG] "folder-input" #3:22396 template=EL-93c1572c
+            [TEXT] #3:21436 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_d5123ae4 text="Move"
+          [FRAME] "Action" #3:21437 template=EL-c482391f
+            [FRAME] "Action icon" #3:21438 template=EL-5b0d0b98
+              [IMAGE-SVG] "heart" #3:22399 template=EL-93c1572c
+            [TEXT] #3:21440 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_d5123ae4 text="Favorite"
+          [FRAME] "Action" #3:21441 template=EL-c482391f
+            [FRAME] "Action icon" #3:21442 layout=layout_d386b916 fills=fill_04432188 borderRadius=16px
+              [IMAGE-SVG] "trash-2" #3:22402 template=EL-93c1572c
+            [TEXT] #3:21444 layout=layout_56d3c81c fills=fill_c72a6a2e textStyle=style_d5123ae4 text="Delete"

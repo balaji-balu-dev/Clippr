@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "albaik-fried-chicken"
+  },
+  "targets": {
+    "albaik-fried-chicken": {
+      "hosting": {
+        "clipprvault": [
+          "clipprvault"
+        ]
+      }
+    }
+  }
+}

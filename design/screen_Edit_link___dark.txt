@@ -1,0 +1,55 @@
+  [FRAME] "Edit link · dark" #3:21449 template=EL-c7b795bf
+    [FRAME] "Android status" #3:21450 template=EL-2fb66994
+      [TEXT] #3:21451 template=EL-55e4357a
+      [FRAME] "System indicators" #3:21452 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22408 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22411 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22414 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21456 template=EL-373c9615
+      [FRAME] "Title group" #3:21457 template=EL-5efdc068
+        [IMAGE-SVG] "arrow-left" #3:22417 template=EL-d2f5d0a6
+        [TEXT] #3:21459 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_f4955406 text="Edit link"
+      [TEXT] #3:21460 layout=layout_177c5efc fills=fill_05112365 textStyle=style_d6226fef text="Done"
+    [FRAME] "Edit link content" #3:21461 template=EL-fe8a28fc
+      [FRAME] "Preview editor" #3:21462 layout={"mode":"row","alignSelf":"stretch","padding":"12px","alignItems":"stretch","gap":"14px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":164}} fills=fill_afe269e4 strokes=fill_33bb5cbd strokeWeight=1px borderRadius=24px
+        [RECTANGLE] "Preview image" #3:21463 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fill"},"dimensions":{"width":132}} fills=[{"type":"IMAGE","imageRef":"dbf3d82494daf67094ec5626bac3bee8d27ca6b1","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=14px
+        [FRAME] "Preview information" #3:21464 layout={"mode":"column","alignSelf":"stretch","padding":"4px 0px","justifyContent":"space-between","sizing":{"horizontal":"fill","vertical":"fill"}}
+          [FRAME] "Preview copy" #3:21465 layout={"mode":"column","alignSelf":"stretch","gap":"6px","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [TEXT] #3:21466 layout=layout_177c5efc fills=fill_05112365 textStyle=style_b9dbba5d text="KIN & FORM"
+            [TEXT] #3:21467 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle={"fontFamily":"DM Sans","fontStyle":"Bold","fontWeight":700,"fontSize":16,"lineHeight":"1.25em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="The quiet architecture of a reading room"
+          [FRAME] "Change image" #3:21468 template=EL-d269e0eb
+            [IMAGE-SVG] "image" #3:22420 template=EL-494805ba
+            [TEXT] #3:21470 layout=layout_177c5efc fills=fill_05112365 textStyle=style_eaa2436b text="Change preview"
+      [FRAME] "Editable fields" #3:21471 template=EL-91e14ea7
+        [FRAME] "Input field" #3:21472 template=EL-5fd47d6a
+          [TEXT] #3:21473 template=EL-2ecd26e4
+          [FRAME] "Field value" #3:21474 template=EL-da551e07
+            [TEXT] #3:21475 template=EL-c62c4763
+        [FRAME] "Input field" #3:21476 template=EL-5fd47d6a
+          [TEXT] #3:21477 template=EL-594ff901
+          [FRAME] "Field value" #3:21478 template=EL-da551e07
+            [IMAGE-SVG] "link" #3:22423 template=EL-f652840d
+            [TEXT] #3:21480 template=EL-dc0a9c47
+        [FRAME] "Input field" #3:21481 template=EL-5fd47d6a
+          [TEXT] #3:21482 template=EL-e55efd01
+          [FRAME] "Field value" #3:21483 template=EL-da551e07
+            [IMAGE-SVG] "folder" #3:22426 template=EL-f652840d
+            [TEXT] #3:21485 template=EL-e4bfecb3
+            [IMAGE-SVG] "chevron-down" #3:22429 template=EL-f1890f3e
+        [FRAME] "Input field" #3:21487 template=EL-5fd47d6a
+          [TEXT] #3:21488 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_c487cf45 text="Notes"
+          [FRAME] "Field value" #3:21489 template=EL-da551e07
+            [TEXT] #3:21490 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_961e93e4 text="Natural light, tactile materials, and a useful reference for the studio redesign."
+      [FRAME] "Edit options" #3:21491 layout=layout_5c79c5b1 fills=fill_afe269e4 borderRadius=24px
+        [FRAME] "Favorite setting" #3:21492 layout={"mode":"row","alignSelf":"stretch","padding":"0px 15px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":58}}
+          [FRAME] "Label group" #3:21493 template=EL-5d197b60
+            [IMAGE-SVG] "heart" #3:22432 template=EL-f652840d
+            [TEXT] #3:21495 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_defc74b3 text="Favorite"
+          [FRAME] "Switch" #3:21496 template=EL-c9ccc51a
+            [FRAME] "Thumb" #3:21497 template=EL-a21a8af2
+      [FRAME] "Button" #3:21498 template=EL-b50a1607
+        [IMAGE-SVG] "check" #3:22435 template=EL-b1d338df
+        [TEXT] #3:21500 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_43426335 text="Save changes"
+      [FRAME] "Button" #3:21501 layout=layout_ae9c81b6 fills=["#3B2928"] strokes=fill_c72a6a2e strokeWeight=1px borderRadius=24px
+        [IMAGE-SVG] "trash-2" #3:22438 template=EL-b1d338df
+        [TEXT] #3:21503 layout=layout_177c5efc fills=fill_c72a6a2e textStyle=style_43426335 text="Delete link"

@@ -1,0 +1,98 @@
+  [FRAME] "Home · dark" #3:20985 template=EL-e6a967ca
+    [FRAME] "Android status" #3:20986 template=EL-2fb66994
+      [TEXT] #3:20987 template=EL-55e4357a
+      [FRAME] "System indicators" #3:20988 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22144 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22147 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22150 template=EL-f652840d
+    [FRAME] "Home app bar" #3:20992 template=EL-373c9615
+      [FRAME] "Clippr title" #3:20993 template=EL-5d197b60
+        [FRAME] "Clippr mark" #3:20994 layout=layout_bad202fc fills=fill_05112365 effects=effect_6ee9f108 borderRadius=11px
+          [FRAME] "Clipped link" #3:20995 template=EL-0f0edadc
+            [ELLIPSE] "Private point" #3:20996 template=EL-d07d30f8
+        [TEXT] #3:20997 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_21c6e633 text="Clippr"
+      [FRAME] "Privacy status" #3:20998 layout=layout_ca2f03d5 fills=fill_ff7c2e7b borderRadius=100px
+        [IMAGE-SVG] "lock" #3:22153 template=EL-62b4d877
+        [TEXT] #3:21000 layout=layout_177c5efc fills=fill_d8631191 textStyle=style_5e4cc8c6 text="LOCAL"
+    [FRAME] "Home content" #3:21001 template=EL-1f551dee
+      [FRAME] "Search field" #3:21002 layout=layout_2bc9fd9e fills=fill_afe269e4 strokes=fill_33bb5cbd strokeWeight=1px borderRadius=24px
+        [IMAGE-SVG] "search" #3:22156 template=EL-a73b2a19
+        [TEXT] #3:21004 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_02d97395 text="Search your links..."
+      [FRAME] "Quick access" #3:21005 template=EL-7e8f3d26
+        [FRAME] "Section heading" #3:21006 template=EL-bb582553
+          [TEXT] #3:21007 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_1f631242 text="Quick access"
+        [FRAME] "Quick access list" #3:21008 template=EL-8d28aa4b
+          [FRAME] "Quick access card" #3:21009 layout=layout_e05b2171 fills=fill_ff7c2e7b strokes=fill_05112365 strokeWeight=1px borderRadius=24px
+            [FRAME] "Quick access icon" #3:21010 layout=layout_07da14cc fills=fill_05112365 borderRadius=12px
+              [IMAGE-SVG] "inbox" #3:22159 template=EL-b1d338df
+            [FRAME] "Quick access information" #3:21012 template=EL-bf569b8f
+              [TEXT] #3:21013 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_8d922e75 text="Inbox"
+              [TEXT] #3:21014 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_0665b73a text="8 new"
+          [FRAME] "Quick access card" #3:21015 layout=layout_e05b2171 fills=fill_afe269e4 strokes=fill_33bb5cbd strokeWeight=1px borderRadius=24px
+            [FRAME] "Quick access icon" #3:21016 layout=layout_07da14cc fills=fill_1d995e9d borderRadius=12px
+              [IMAGE-SVG] "heart" #3:22162 template=EL-b1d338df
+            [FRAME] "Quick access information" #3:21018 template=EL-bf569b8f
+              [TEXT] #3:21019 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_8d922e75 text="Favorites"
+              [TEXT] #3:21020 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_0665b73a text="24 links"
+      [FRAME] "Folders" #3:21021 template=EL-7e8f3d26
+        [FRAME] "Section heading" #3:21022 template=EL-bb582553
+          [TEXT] #3:21023 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_1f631242 text="Folders"
+          [TEXT] #3:21024 layout=layout_177c5efc fills=fill_05112365 textStyle=style_defc74b3 text="View all"
+        [FRAME] "Folder list" #3:21025 template=EL-8d28aa4b
+          [FRAME] "Folder card" #3:21026 template=EL-7037d049
+            [FRAME] "Folder icon" #3:21027 layout=layout_07da14cc fills=fill_fba4f930 borderRadius=12px
+              [IMAGE-SVG] "palette" #3:22165 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21029 template=EL-6e926975
+              [TEXT] #3:21030 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_43426335 text="Design"
+              [TEXT] #3:21031 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_c487cf45 text="31 links"
+          [FRAME] "Folder card" #3:21032 template=EL-7037d049
+            [FRAME] "Folder icon" #3:21033 layout=layout_07da14cc fills=["#30443A"] borderRadius=12px
+              [IMAGE-SVG] "utensils" #3:22168 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21035 template=EL-6e926975
+              [TEXT] #3:21036 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_43426335 text="Recipes"
+              [TEXT] #3:21037 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_c487cf45 text="18 links"
+          [FRAME] "Folder card" #3:21038 template=EL-7037d049
+            [FRAME] "Folder icon" #3:21039 layout=layout_07da14cc fills=["#353D50"] borderRadius=12px
+              [IMAGE-SVG] "plane" #3:22171 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21041 template=EL-6e926975
+              [TEXT] #3:21042 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_43426335 text="Travel"
+              [TEXT] #3:21043 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_c487cf45 text="12 links"
+      [FRAME] "Recently saved" #3:21044 template=EL-7e8f3d26
+        [FRAME] "Section heading" #3:21045 template=EL-bb582553
+          [TEXT] #3:21046 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_1f631242 text="Recently saved"
+          [TEXT] #3:21047 layout=layout_177c5efc fills=fill_05112365 textStyle=style_defc74b3 text="See all"
+        [FRAME] "Link preview card" #3:21048 template=EL-47f3ae7f
+          [RECTANGLE] "Editorial thumbnail" #3:21049 template=EL-da600bf6
+          [FRAME] "Link information" #3:21050 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21051 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21052 template=EL-bb582553
+                [TEXT] #3:21053 template=EL-0fd4786f
+                [IMAGE-SVG] "heart" #3:22174 template=EL-494805ba
+              [TEXT] #3:21055 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_20f9bdbf text="The art of building a calmer digital home"
+            [TEXT] #3:21056 layout=layout_56d3c81c fills=fill_9dab4a2b textStyle=style_0665b73a text="Design · saved 12 min ago"
+        [FRAME] "Link preview card" #3:21057 template=EL-47f3ae7f
+          [RECTANGLE] "Editorial thumbnail" #3:21058 template=EL-3fd63ff1
+          [FRAME] "Link information" #3:21059 template=EL-c97fb3fe
+            [FRAME] "Link heading" #3:21060 template=EL-3b668c42
+              [FRAME] "Domain row" #3:21061 template=EL-bb582553
+                [TEXT] #3:21062 template=EL-a40222c0
+              [TEXT] #3:21063 layout=layout_56d3c81c fills=fill_3d7778d4 textStyle=style_20f9bdbf text="A field guide to slow weekends in Kyoto"
+            [TEXT] #3:21064 template=EL-fd98bff2
+    [FRAME] "Bottom navigation · Floating slot" #14:54 template=EL-df83c028
+      [FRAME] "Bottom navigation · Floating" #3:21065 template=EL-3689e716
+        [FRAME] "Navigation item" #3:21066 template=EL-a34f3e9d
+          [FRAME] "Icon container" #3:21067 template=EL-d5d61141
+            [IMAGE-SVG] "house" #3:22177 template=EL-b1d338df
+          [TEXT] #3:21069 template=EL-94b73735
+        [FRAME] "Navigation item" #3:21070 template=EL-a34f3e9d
+          [FRAME] "Icon container" #3:21071 template=EL-4d3fe1f2
+            [IMAGE-SVG] "folder" #3:22180 template=EL-b1d338df
+          [TEXT] #3:21073 template=EL-da2ff29f
+        [FRAME] "Navigation item" #3:21074 template=EL-a34f3e9d
+          [FRAME] "Icon container" #3:21075 template=EL-4d3fe1f2
+            [IMAGE-SVG] "heart" #3:22183 template=EL-b1d338df
+          [TEXT] #3:21077 template=EL-18e678c8
+        [FRAME] "Navigation item" #3:21078 template=EL-a34f3e9d
+          [FRAME] "Icon container" #3:21079 template=EL-4d3fe1f2
+            [IMAGE-SVG] "settings" #3:22186 template=EL-b1d338df
+          [TEXT] #3:21081 template=EL-c63d3093

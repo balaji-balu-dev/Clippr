@@ -1,0 +1,21 @@
+  [FRAME] "Splash · settle" #3:20787 template=EL-b2a41849
+    [FRAME] "Android status" #3:20788 template=EL-2fb66994
+      [TEXT] #3:20789 template=EL-a5c303b8
+      [FRAME] "System indicators" #3:20790 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22039 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22042 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22045 template=EL-f652840d
+    [FRAME] "Splash content" #3:20794 template=EL-7102127c
+      [FRAME] "Logo reveal" #3:20795 layout=layout_56b69f0a
+        [FRAME] "Clippr mark" #3:20796 layout=layout_40aa684b fills=fill_76dca3bd effects=effect_6ee9f108 borderRadius=31px
+          [FRAME] "Clipped link" #3:20797 layout={"mode":"row","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":58.68,"height":49.69}} strokes=fill_658ab2fa strokeWeight=3px borderRadius=100px
+            [ELLIPSE] "Private point" #3:20798 template=EL-d07d30f8
+        [FRAME] "Wordmark" #3:20799 template=EL-c7ccf2ec
+          [TEXT] #3:20800 template=EL-a6f9a9b7
+          [TEXT] #3:20801 template=EL-306d0a20
+      [FRAME] "Sequence specification" #3:20802 template=EL-91e14ea7
+        [FRAME] "Sequence progress" #3:20803 template=EL-1f538fbc
+          [FRAME] "Progress segment" #3:20804 template=EL-ef73150f
+          [FRAME] "Progress segment" #3:20805 template=EL-ef73150f
+          [FRAME] "Progress segment" #3:20806 template=EL-ef73150f
+          [FRAME] "Progress segment" #3:20807 template=EL-ef73150f

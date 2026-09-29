@@ -1,0 +1,54 @@
+  [FRAME] "Android Share Sheet · Save Link · dark" #3:21326 template=EL-c7b795bf
+    [FRAME] "Android status" #3:21327 template=EL-2fb66994
+      [TEXT] #3:21328 template=EL-55e4357a
+      [FRAME] "System indicators" #3:21329 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22327 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22330 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22333 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21333 template=EL-373c9615
+      [FRAME] "Title group" #3:21334 template=EL-5efdc068
+        [TEXT] #3:21335 layout=layout_177c5efc fills=fill_3d7778d4 textStyle=style_a8d7ffcb text="Save link"
+      [TEXT] #3:21336 layout=layout_177c5efc fills=fill_05112365 textStyle=style_d6226fef text="Cancel"
+    [FRAME] "Share sheet content" #3:21337 template=EL-dad7a211
+      [FRAME] "Share source" #3:21338 template=EL-c8d50cb3
+        [FRAME] "Source icon" #3:21339 layout=layout_03d6ce2b fills=fill_afe269e4 borderRadius=9px
+          [IMAGE-SVG] "chrome" #3:22336 template=EL-494805ba
+        [TEXT] #3:21341 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_0665b73a text="Shared from Chrome · preview ready"
+      [FRAME] "Rich preview" #3:21342 layout=layout_32c7f4c9 borderRadius=30px
+        [RECTANGLE] "Preview image" #3:21343 template=EL-781f07bc
+        [RECTANGLE] "Image scrim" #3:21344 template=EL-d050d8f3
+        [FRAME] "Preview status" #3:21345 template=EL-21664413
+          [IMAGE-SVG] "sparkles" #3:22339 template=EL-62b4d877
+          [TEXT] #3:21347 template=EL-524da0b2
+        [FRAME] "Preview copy" #3:21348 template=EL-494d1694
+          [TEXT] #3:21349 template=EL-f88013a3
+          [TEXT] #3:21350 template=EL-f5de2f40
+      [FRAME] "Link fields" #3:21351 template=EL-50ef8a26
+        [FRAME] "Input field" #3:21352 template=EL-5fd47d6a
+          [TEXT] #3:21353 template=EL-2ecd26e4
+          [FRAME] "Field value" #3:21354 template=EL-da551e07
+            [TEXT] #3:21355 template=EL-c62c4763
+        [FRAME] "Input field" #3:21356 template=EL-5fd47d6a
+          [TEXT] #3:21357 template=EL-594ff901
+          [FRAME] "Field value" #3:21358 template=EL-da551e07
+            [IMAGE-SVG] "link" #3:22342 template=EL-f652840d
+            [TEXT] #3:21360 template=EL-dc0a9c47
+        [FRAME] "Input field" #3:21361 template=EL-5fd47d6a
+          [TEXT] #3:21362 template=EL-e55efd01
+          [FRAME] "Field value" #3:21363 template=EL-da551e07
+            [IMAGE-SVG] "folder" #3:22345 template=EL-f652840d
+            [TEXT] #3:21365 template=EL-e4bfecb3
+            [IMAGE-SVG] "chevron-down" #3:22348 template=EL-f1890f3e
+        [FRAME] "New folder action" #3:21367 template=EL-06a3f237
+          [IMAGE-SVG] "folder-plus" #3:22351 template=EL-f1890f3e
+          [TEXT] #3:21369 layout=layout_177c5efc fills=fill_05112365 textStyle=style_7f0e5c40 text="+ New Folder"
+      [FRAME] "Save options" #3:21370 template=EL-26393dbd
+        [FRAME] "Favorite option" #3:21371 template=EL-555f2b2b
+          [FRAME] "Checkbox" #3:21372 layout=layout_75d3dc72 strokes=fill_33bb5cbd strokeWeight=1px borderRadius=7px
+            [IMAGE-SVG] "heart" #3:22354 template=EL-62b4d877
+          [TEXT] #3:21374 layout=layout_177c5efc fills=fill_9dab4a2b textStyle=style_c487cf45 text="Add to favorites"
+        [TEXT] #3:21375 layout=layout_177c5efc fills=fill_05112365 textStyle=style_0665b73a text="Saved on device"
+      [FRAME] "Save action" #3:21376 template=EL-627bf71a
+        [FRAME] "Button" #3:21377 template=EL-b50a1607
+          [IMAGE-SVG] "check" #3:22357 template=EL-b1d338df
+          [TEXT] #3:21379 template=EL-e0a33f2b

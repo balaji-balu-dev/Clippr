@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clippr Play Store Feature Graphic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html, body {
+      width: 1024px;
+      height: 500px;
+      overflow: hidden;
+      background: #080a10;
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    }
+
+    .banner {
+      position: relative;
+      width: 1024px;
+      height: 500px;
+      overflow: hidden;
+      background-color: #080a10;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Background 3D Render */
+    .bg-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 70% center;
+      z-index: 1;
+    }
+
+    /* Gradient overlay to ensure text contrast and safe margins */
+    .gradient-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(8, 10, 16, 0.98) 0%,
+        rgba(8, 10, 16, 0.94) 38%,
+        rgba(8, 10, 16, 0.72) 55%,
+        rgba(8, 10, 16, 0.15) 75%,
+        rgba(8, 10, 16, 0) 100%
+      );
+      z-index: 2;
+    }
+
+    /* Subtle top and bottom vignette */
+    .vignette-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(8, 10, 16, 0.45) 0%,
+        transparent 20%,
+        transparent 80%,
+        rgba(8, 10, 16, 0.65) 100%
+      );
+      z-index: 3;
+    }
+
+    /* Ambient glow spots */
+    .glow-spot {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(124, 77, 255, 0.28) 0%, transparent 70%);
+      filter: blur(50px);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* Content Area (Safe Zone compliant) */
+    .content {
+      position: relative;
+      z-index: 4;
+      padding-left: 64px;
+      max-width: 530px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* Category Pill Badge */
+    .pill-badge {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(124, 77, 255, 0.14);
+      border: 1px solid rgba(124, 77, 255, 0.35);
+      border-radius: 100px;
+      padding: 6px 14px;
+      backdrop-filter: blur(12px);
+    }
+
+    .pill-badge .sparkle {
+      color: #00e5ff;
+      font-size: 0.9rem;
+    }
+
+    .pill-badge span {
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c4b5fd;
+    }
+
+    /* Main Branding Header */
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 2px;
+    }
+
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6), 0 0 0 1.5px rgba(255, 255, 255, 0.15);
+    }
+
+    .brand-title {
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      background: linear-gradient(135deg, #ffffff 40%, #c4b5fd 80%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 4px 16px rgba(124, 77, 255, 0.35));
+    }
+
+    /* Tagline */
+    .tagline {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+    }
+
+    .sub-tagline {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      font-weight: 400;
+      line-height: 1.45;
+      margin-top: -4px;
+    }
+
+    /* Feature Pills */
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .feature-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(20, 24, 38, 0.78);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 7px 14px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .feature-chip .chip-icon {
+      font-size: 0.95rem;
+    }
+
+    .feature-chip .chip-text {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      letter-spacing: -0.01em;
+    }
+
+    .feature-chip.highlight {
+      border-color: rgba(0, 229, 255, 0.3);
+      background: rgba(0, 229, 255, 0.06);
+    }
+
+    .feature-chip.highlight .chip-text {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <!-- 3D Mascot & Vault Artwork -->
+    <img src="bg.jpg" class="bg-image" alt="Clippr Vault Mascot" />
+    
+    <!-- Seamless Gradient & Vignette Layers -->
+    <div class="gradient-overlay"></div>
+    <div class="vignette-overlay"></div>
+    <div class="glow-spot"></div>
+
+    <!-- Content / Typography in Safe Zone -->
+    <div class="content">
+      <div class="pill-badge">
+        <span class="sparkle">✦</span>
+        <span>Smart Link Vault</span>
+      </div>
+
+      <div class="brand-row">
+        <img src="icon.png" class="app-icon" alt="Clippr Icon" />
+        <h1 class="brand-title">Clippr</h1>
+      </div>
+
+      <p class="tagline">Your Private, Offline Bookmark Vault</p>
+      <p class="sub-tagline">Save links instantly from any app with hardware-grade security.</p>
+
+      <div class="features-list">
+        <div class="feature-chip highlight">
+          <span class="chip-icon">🔒</span>
+          <span class="chip-text">100% Local-First</span>
+        </div>
+        <div class="feature-chip">
+          <span class="chip-icon">🛡️</span>
+          <span class="chip-text">Biometric Lock</span>
+        </div>
+        <div class="feature-chip">
+          <span class="chip-icon">⚡</span>
+          <span class="chip-text">Instant Share</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

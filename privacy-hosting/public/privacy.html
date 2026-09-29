@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Clippr – Smart Link Vault</title>
+  <meta name="description" content="Privacy Policy for Clippr – Smart Link Vault (com.clipprvault.app). A 100% local-first, private bookmarking and link management vault.">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c0e14;
+      --surface: #141721;
+      --surface-border: #222738;
+      --surface-hover: #1a1e2b;
+      --text-main: #f0f3fa;
+      --text-muted: #9aa3b8;
+      --text-sub: #6b758d;
+      --primary: #7c4dff;
+      --primary-glow: rgba(124, 77, 255, 0.25);
+      --accent: #00e5ff;
+      --accent-glow: rgba(0, 229, 255, 0.15);
+      --card-badge-bg: rgba(124, 77, 255, 0.12);
+      --card-badge-border: rgba(124, 77, 255, 0.3);
+      --green: #10b981;
+      --green-bg: rgba(16, 185, 129, 0.12);
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .glow-bg {
+      position: fixed;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 600px;
+      background: radial-gradient(circle, var(--primary-glow) 0%, var(--accent-glow) 50%, transparent 70%);
+      filter: blur(80px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 24px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--surface-border);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #ffffff 40%, #b3b9ce 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .app-id-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    .app-id-pill .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green);
+    }
+
+    .meta-info {
+      color: var(--text-sub);
+      font-size: 0.9rem;
+      margin-top: 14px;
+    }
+
+    /* Highlights Badges */
+    .badges-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 44px;
+    }
+
+    .badge-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .badge-card .icon {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .badge-card .label {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .badge-card .sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    /* Content sections */
+    .policy-content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--card-badge-bg);
+      border: 1px solid var(--card-badge-border);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 800;
+      font-family: var(--font-mono);
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 26px;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: var(--primary);
+      font-size: 1.2rem;
+      line-height: 1;
+      top: 2px;
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: 12px;
+      border: 1px solid var(--surface-border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      text-align: left;
+    }
+
+    th {
+      background: #10131a;
+      color: var(--text-main);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--surface-border);
+      font-weight: 600;
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--surface-border);
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .code-tag {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--surface-border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--accent);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid var(--surface-border);
+      color: var(--text-sub);
+      font-size: 0.88rem;
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 16px 64px;
+      }
+      h1 {
+        font-size: 1.85rem;
+      }
+      .section-card {
+        padding: 22px 18px;
+      }
+      .badges-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-bg"></div>
+  <div class="container">
+    <header>
+      <img src="icon.png" alt="Clippr Vault App Icon" class="app-icon" onerror="this.style.display='none'">
+      <h1>Privacy Policy</h1>
+      <div class="app-id-pill">
+        <span class="dot"></span>
+        <span>Clippr · com.clipprvault.app</span>
+      </div>
+      <p class="meta-info">Effective Date: September 29, 2026 &nbsp;|&nbsp; Last Updated: September 29, 2026</p>
+    </header>
+
+    <div class="badges-grid">
+      <div class="badge-card">
+        <span class="icon">🔒</span>
+        <span class="label">100% Local-First</span>
+        <span class="sub">Your data never leaves your device</span>
+      </div>
+      <div class="badge-card">
+        <span class="icon">🚫</span>
+        <span class="label">Zero Tracking</span>
+        <span class="sub">No analytics, ad networks, or telemetry</span>
+      </div>
+      <div class="badge-card">
+        <span class="icon">🛡️</span>
+        <span class="label">Hardware Encryption</span>
+        <span class="sub">AES-256 Android Keystore protection</span>
+      </div>
+      <div class="badge-card">
+        <span class="icon">👤</span>
+        <span class="label">No Account Required</span>
+        <span class="sub">No sign-up, email, or passwords</span>
+      </div>
+    </div>
+
+    <div class="policy-content">
+      <!-- Section 1 -->
+      <section class="section-card">
+        <h2><span class="num">01</span> Introduction</h2>
+        <p>Welcome to <strong>Clippr – Smart Link Vault</strong> ("Clippr", "the App", "we", "us", or "our"). Clippr is developed as a native, private, local-first Android link vault and bookmark manager (Application ID: <span class="code-tag">com.clipprvault.app</span>).</p>
+        <p>We believe your personal bookmarks, browsing intentions, and saved research are private to you. This Privacy Policy outlines our commitment to absolute data privacy and transparency regarding how the App operates.</p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section-card">
+        <h2><span class="num">02</span> The Local-First Architecture</h2>
+        <p>Clippr operates entirely on your physical device. We do not operate remote databases, link syndication servers, or cloud storage backends.</p>
+        <ul>
+          <li><strong>Local Database:</strong> All saved links, collections, custom tags, reading progress, and personal notes are stored strictly in an encrypted/private SQLite database inside your device's isolated application storage sandbox.</li>
+          <li><strong>No Cloud Sync:</strong> Clippr does not transmit your bookmarks or browsing habits to any external servers.</li>
+          <li><strong>Full Ownership:</strong> You retain complete and total ownership of all content saved in the App.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section-card">
+        <h2><span class="num">03</span> Information We Do NOT Collect</h2>
+        <p>Because Clippr is designed around zero-knowledge principles:</p>
+        <ul>
+          <li>We <strong>do not</strong> collect personal identification information (such as your name, email address, phone number, or physical location).</li>
+          <li>We <strong>do not</strong> collect device identifiers (such as IMEI, Android ID, Advertising ID, or MAC address).</li>
+          <li>We <strong>do not</strong> log your IP address or monitor what links you save, read, or organize.</li>
+          <li>We <strong>do not</strong> utilize any third-party behavioral analytics (such as Google Analytics, Firebase Analytics, Mixpanel, or Segment).</li>
+          <li>We <strong>do not</strong> embed advertising frameworks or commercial trackers (such as Google AdMob, Unity Ads, or Meta Audience Network).</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section-card">
+        <h2><span class="num">04</span> Android Device Permissions</h2>
+        <p>Clippr requests only the minimal set of system permissions strictly required for its core functionality:</p>
+        
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+                <th>Data Handling</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="code-tag">INTERNET</span></td>
+                <td>Used strictly on-device to connect directly to the target web address you choose to save in order to retrieve the page title, description, and preview image (OpenGraph metadata).</td>
+                <td>Direct device-to-website HTTP request. No intermediary server or tracking proxy is used.</td>
+              </tr>
+              <tr>
+                <td><span class="code-tag">ACCESS_NETWORK_STATE</span></td>
+                <td>Enables the App to detect when an active Wi-Fi or cellular connection is present before attempting to fetch link previews.</td>
+                <td>Read locally by Android OS; not collected or logged.</td>
+              </tr>
+              <tr>
+                <td><span class="code-tag">USE_BIOMETRIC</span></td>
+                <td>Allows you to lock and unlock the App using your fingerprint, face unlock, or device PIN (Vault AppLock).</td>
+                <td>Handled entirely by the secure Android BiometricPrompt system. The App never accesses, reads, or stores your biometric templates.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="section-card">
+        <h2><span class="num">05</span> Security & Encrypted Backups</h2>
+        <p>Clippr leverages cutting-edge Android platform security standards:</p>
+        <ul>
+          <li><strong>Android Keystore:</strong> Cryptographic keys used for secure storage and backups are generated inside your device's hardware-backed Secure Enclave / Trusted Execution Environment (TEE), ensuring keys cannot be extracted even on compromised devices.</li>
+          <li><strong>Vault Export & Backup:</strong> When you export your data, Clippr creates an encrypted <span class="code-tag">.clippr</span> vault archive using industry-standard <strong>AES-256-GCM</strong> authenticated encryption with a user-supplied password and Argon2/PBKDF2 key derivation.</li>
+          <li><strong>App Isolation:</strong> Android's application sandboxing prevents other applications installed on your phone from accessing Clippr's private internal storage.</li>
+        </ul>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="section-card">
+        <h2><span class="num">06</span> Third-Party Links & Services</h2>
+        <p>When you click to open or view a link stored in Clippr, you may open the target URL in your default web browser (e.g. Chrome, Firefox) or via Android Custom Tabs. Once you navigate to an external website, their respective privacy policies and terms of service govern their data collection practices. We encourage you to review the privacy notices of websites you frequent.</p>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="section-card">
+        <h2><span class="num">07</span> User Control & Data Deletion</h2>
+        <p>Because all data resides exclusively on your local device, you possess total control over your data at all times:</p>
+        <ul>
+          <li><strong>Manual Deletion:</strong> You can delete individual links, clear your trash, or reset collections at any moment from within the App.</li>
+          <li><strong>Complete Eradication:</strong> Clearing Clippr's storage via your device's <em>Settings &gt; Apps &gt; Clippr &gt; Clear Storage / Data</em>, or uninstalling the App, permanently and immediately deletes all stored links, bookmarks, thumbnails, and cache from your device.</li>
+        </ul>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="section-card">
+        <h2><span class="num">08</span> Children’s Privacy</h2>
+        <p>Clippr does not knowingly collect, store, or solicit personal data from children under the age of 13 (or under 16 in the European Union). The App is fully suitable for all audiences as a private local utility and complies with the Children’s Online Privacy Protection Act (COPPA) and Google Play Families Policy.</p>
+      </section>
+
+      <!-- Section 9 -->
+      <section class="section-card">
+        <h2><span class="num">09</span> Changes to this Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any revisions will be reflected on this hosted page with an updated "Last Updated" timestamp. Because the App collects no email or contact information, checking this page periodically is recommended.</p>
+      </section>
+
+      <!-- Section 10 -->
+      <section class="section-card">
+        <h2><span class="num">10</span> Contact Us</h2>
+        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or Clippr's privacy architecture, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:balajir964@gmail.com" style="color: var(--accent); text-decoration: none;">balajir964@gmail.com</a></p>
+        <p><strong>Developer:</strong> Clippr Mobile Team</p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 Clippr (<span class="code-tag">com.clipprvault.app</span>). All rights reserved.</p>
+      <p style="margin-top: 6px;">Hosted securely on Google Firebase Hosting</p>
+    </footer>
+  </div>
+</body>
+</html>

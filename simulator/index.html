@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clippr — Virtual Device & Live UI Simulator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="simulator.css">
+  <!-- HTML2Canvas for clean screenshot capture -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body class="theme-dark">
+
+  <!-- Desktop Workspace & Simulator Controls -->
+  <div class="simulator-workspace">
+    
+    <!-- Left Control Panel -->
+    <aside class="control-panel">
+      <div class="brand-header">
+        <div class="brand-monogram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#87B69D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 17H7A5 5 0 0 1 7 7h2"/>
+            <path d="M15 7h2a5 5 0 1 1 0 10h-2"/>
+            <line x1="8" y1="12" x2="16" y2="12"/>
+          </svg>
+        </div>
+        <div>
+          <h2>Clippr Virtual Device</h2>
+          <span class="sub-badge">Live Interactive Simulator</span>
+        </div>
+      </div>
+
+      <div class="control-section">
+        <label class="control-label">Quick Actions</label>
+        <div class="button-group">
+          <button id="btn-screenshot" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+            Capture Screenshot
+          </button>
+          
+          <button id="btn-toggle-theme" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+            </svg>
+            Toggle Theme (Dark / Light)
+          </button>
+
+          <button id="btn-trigger-share" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+            Simulate Android Share Sheet
+          </button>
+        </div>
+      </div>
+
+      <div class="control-section">
+        <label class="control-label">Screen Navigator</label>
+        <div class="screen-pills">
+          <button class="nav-pill active" data-screen="home">Home Dashboard</button>
+          <button class="nav-pill" data-screen="detail">Reader Mode</button>
+          <button class="nav-pill" data-screen="folders">Folders Grid</button>
+          <button class="nav-pill" data-screen="folder-detail">Folder Detail</button>
+          <button class="nav-pill" data-screen="favorites">Favorites</button>
+          <button class="nav-pill" data-screen="search">Search Vault</button>
+          <button class="nav-pill" data-screen="settings">Settings</button>
+        </div>
+      </div>
+
+      <div class="control-section">
+        <label class="control-label">Add Test Link to Vault</label>
+        <form id="form-add-link" class="add-link-form">
+          <input type="text" id="input-title" placeholder="Title (e.g. Design Systems 2026)" required>
+          <input type="url" id="input-url" placeholder="URL (e.g. https://linear.app)" required>
+          <select id="select-folder">
+            <option value="design">Design</option>
+            <option value="tech">Tech</option>
+            <option value="recipes">Recipes</option>
+            <option value="travel">Travel</option>
+            <option value="inbox">Inbox</option>
+          </select>
+          <button type="submit" class="btn btn-accent">+ Add to Live Feed</button>
+        </form>
+      </div>
+
+      <div class="control-section device-info-card">
+        <h4>Device Specifications</h4>
+        <p>• Display: 412 × 915 dp (Android Flagship)</p>
+        <p>• Palette: Organic OLED Moss (`#101613`)</p>
+        <p>• Typography: DM Sans & Inter</p>
+        <p>• Security: Unlocked for Screenshot Capture</p>
+      </div>
+    </aside>
+
+    <!-- Center Phone Stage -->
+    <main class="device-stage">
+      <div class="device-chassis" id="device-container">
+        
+        <!-- Physical Bezel & Camera Cutout -->
+        <div class="device-notch">
+          <div class="camera-lens"></div>
+          <div class="speaker-slit"></div>
+        </div>
+
+        <!-- Phone Display Screen -->
+        <div class="device-screen" id="device-screen">
+          
+          <!-- System Status Bar -->
+          <div class="system-status-bar">
+            <span class="status-clock" id="status-clock">09:41</span>
+            <div class="status-icons">
+              <svg width="15" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M2 20h20L12 4 2 20z"/>
+              </svg>
+              <svg width="15" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z"/>
+              </svg>
+              <svg width="16" height="12" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="6" width="18" height="12" rx="2"/>
+                <path d="M22 10v4"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Screen Views Container -->
+          <div class="screens-container" id="screens-container">
+            
+            <!-- 1. HOME SCREEN -->
+            <section class="app-screen active" id="screen-home">
+              <header class="home-header">
+                <div class="brand-row">
+                  <div class="brand-pill">
+                    <div class="app-mark">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#87B69D" stroke-width="2.5">
+                        <path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/>
+                        <line x1="8" y1="12" x2="16" y2="12"/>
+                      </svg>
+                    </div>
+                    <span class="app-title">Clippr</span>
+                  </div>
+                  <div class="local-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#87B69D" stroke-width="2.5">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                    <span>LOCAL</span>
+                  </div>
+                </div>
+
+                <!-- Search Input Trigger -->
+                <div class="search-trigger" id="home-search-trigger">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#AAB6AF" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                  </svg>
+                  <span>Search your vault...</span>
+                </div>
+              </header>
+
+              <div class="screen-scrollable">
+                <!-- Quick Access Bento (Inbox & Favorites) -->
+                <div class="section-title">Quick access</div>
+                <div class="quick-access-grid">
+                  <div class="quick-card" id="card-quick-inbox">
+                    <div class="quick-icon-box">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#87B69D" stroke-width="2">
+                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/>
+                        <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="quick-title">Inbox</div>
+                      <div class="quick-sub" id="inbox-count-text">8 new</div>
+                    </div>
+                  </div>
+
+                  <div class="quick-card" id="card-quick-fav">
+                    <div class="quick-icon-box">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#87B69D" stroke-width="2">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="quick-title">Favorites</div>
+                      <div class="quick-sub" id="fav-count-text">24 links</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Folders Carousel -->
+                <div class="section-header-row">
+                  <span class="section-title">Folders</span>
+                  <button class="section-action" id="action-view-folders">View all</button>
+                </div>
+                <div class="folders-horizontal-scroll" id="folders-carousel">
+                  <!-- Injected dynamically -->
+                </div>
+
+                <!-- Recently Saved + Mobbin Segmented View Switcher -->
+                <div class="feed-header-row">
+                  <div>
+                    <div class="section-title">Recently saved</div>
+                    <div class="feed-count-caption" id="feed-count-caption">12 links</div>
+                  </div>
+
+                  <!-- Mobbin Segmented Layout Switcher -->
+                  <div class="layout-toggle-pill" id="feed-layout-toggle">
+                    <button class="toggle-btn active" data-mode="editorial" title="Editorial Hero Cards">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
+                      </svg>
+                      <span>Hero</span>
+                    </button>
+                    <button class="toggle-btn" data-mode="grid" title="2-Column Bento Grid">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+                      </svg>
+                      <span>Grid</span>
+                    </button>
+                    <button class="toggle-btn" data-mode="list" title="Compact 1-Line Rows">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+                        <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+                      </svg>
+                      <span>List</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Feed Content (Switches between Editorial, Grid, List) -->
+                <div class="links-feed mode-editorial" id="home-links-feed">
+                  <!-- Rendered via JS -->
+                </div>
+              </div>
+            </section>
+
+            <!-- 2. READER / LINK DETAIL SCREEN -->
+            <section class="app-screen" id="screen-detail">
+              <!-- Reading progress bar -->
+              <div class="reader-progress-track">
+                <div class="reader-progress-fill" id="reader-progress-fill"></div>
+              </div>
+
+              <header class="detail-header">
+                <button class="icon-btn-round btn-back">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m15 18-6-6 6-6"/>
+                  </svg>
+                </button>
+                <span class="detail-domain-title" id="detail-header-domain">LINEAR.APP</span>
+                <button class="icon-btn-round" id="detail-btn-fav">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  </svg>
+                </button>
+              </header>
+
+              <div class="screen-scrollable detail-scroll" id="detail-scrollable">
+                <div class="detail-banner-box" id="detail-hero-banner">
+                  <!-- Banner image / placeholder -->
+                </div>
+
+                <h1 class="detail-title" id="detail-full-title">The Art of Building a Calmer Digital Vault</h1>
+
+                <div class="detail-meta-row">
+                  <span class="badge-tag" id="detail-folder-badge">Design</span>
+                  <span class="badge-read-time" id="detail-read-time">5 min read</span>
+                  <span class="meta-dot">·</span>
+                  <span class="meta-date" id="detail-saved-date">Saved 12 min ago</span>
+                </div>
+
+                <div class="detail-body-text" id="detail-body-text">
+                  Discovering intentional principles behind private, distraction-free bookmarking. In a world saturated with ephemeral feeds and algorithmically generated engagement traps, having an encrypted local sanctuary for your curated reading material alters your relationship with the internet.
+                </div>
+
+                <div class="detail-notes-card">
+                  <div class="notes-header">Your Notes</div>
+                  <div class="notes-content" id="detail-notes-text">Essential reference for the new typography rhythm and color system tokens.</div>
+                </div>
+
+                <button class="btn btn-primary btn-block btn-open-browser" id="detail-btn-open-browser">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                  Open in browser
+                </button>
+              </div>
+
+              <!-- Floating Frosted Reader Dock -->
+              <div class="reader-floating-dock">
+                <button class="dock-btn" id="dock-btn-share" title="Share link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                  </svg>
+                </button>
+                <button class="dock-btn" id="dock-btn-copy" title="Copy URL">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                  </svg>
+                </button>
+                <button class="dock-btn" id="dock-btn-move" title="Move folder">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                    <line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/>
+                  </svg>
+                </button>
+                <button class="dock-btn" id="dock-btn-trash" title="Delete">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5C5C" stroke-width="2">
+                    <path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+                  </svg>
+                </button>
+              </div>
+            </section>
+
+            <!-- 3. FOLDERS SCREEN -->
+            <section class="app-screen" id="screen-folders">
+              <header class="screen-top-bar">
+                <h2>Folders</h2>
+                <button class="btn-pill-small" id="btn-open-create-folder">+ New</button>
+              </header>
+
+              <div class="search-trigger" style="margin: 0 18px 12px 18px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#AAB6AF" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                </svg>
+                <input type="text" id="input-search-folders" placeholder="Search folders..." class="clean-input">
+              </div>
+
+              <div class="feed-header-row" style="padding-top: 0;">
+                <span class="sub-caption" id="folders-count-caption">5 folders · 68 links</span>
+                <div class="layout-toggle-pill" id="folders-layout-toggle">
+                  <button class="toggle-btn active" data-fmode="grid">Grid</button>
+                  <button class="toggle-btn" data-fmode="list">List</button>
+                </div>
+              </div>
+
+              <div class="screen-scrollable">
+                <div class="folders-grid mode-grid" id="folders-display-container">
+                  <!-- Rendered via JS -->
+                </div>
+              </div>
+            </section>
+
+            <!-- 4. FOLDER DETAIL SCREEN -->
+            <section class="app-screen" id="screen-folder-detail">
+              <header class="detail-header">
+                <button class="icon-btn-round btn-back">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m15 18-6-6 6-6"/>
+                  </svg>
+                </button>
+                <h3 id="folder-detail-header-title">Design</h3>
+                <div style="width: 36px;"></div>
+              </header>
+
+              <div class="screen-scrollable">
+                <!-- Folder Hero Card -->
+                <div class="folder-hero-card" id="folder-hero-card">
+                  <div class="folder-hero-icon" id="folder-hero-icon">🎨</div>
+                  <div>
+                    <h2 class="folder-hero-title" id="folder-hero-title">Design</h2>
+                    <span class="folder-hero-subtitle" id="folder-hero-count">31 links · updated today</span>
+                  </div>
+                </div>
+
+                <!-- Filter Chips -->
+                <div class="filter-pills-row">
+                  <button class="chip active">All (31)</button>
+                  <button class="chip">Favorites (8)</button>
+                  <button class="chip">Articles (19)</button>
+                </div>
+
+                <div class="links-feed mode-editorial" id="folder-links-feed">
+                  <!-- Rendered via JS -->
+                </div>
+              </div>
+            </section>
+
+            <!-- 5. FAVORITES SCREEN -->
+            <section class="app-screen" id="screen-favorites">
+              <header class="screen-top-bar">
+                <div>
+                  <h2>Favorites</h2>
+                  <span class="sub-caption" id="fav-screen-subtitle">24 pinned links</span>
+                </div>
+                <div class="layout-toggle-pill" id="fav-layout-toggle">
+                  <button class="toggle-btn active" data-mode="editorial">Hero</button>
+                  <button class="toggle-btn" data-mode="grid">Grid</button>
+                  <button class="toggle-btn" data-mode="list">List</button>
+                </div>
+              </header>
+
+              <div class="screen-scrollable">
+                <div class="links-feed mode-editorial" id="favorites-links-feed">
+                  <!-- Rendered via JS -->
+                </div>
+              </div>
+            </section>
+
+            <!-- 6. SEARCH SCREEN -->
+            <section class="app-screen" id="screen-search">
+              <header class="search-screen-bar">
+                <button class="icon-btn-round btn-back">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m15 18-6-6 6-6"/>
+                  </svg>
+                </button>
+                <div class="search-input-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#87B69D" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                  </svg>
+                  <input type="text" id="live-search-input" placeholder="Search titles, domains, notes..." autofocus>
+                  <button id="btn-clear-search" class="icon-btn-round" style="display: none; width: 24px; height: 24px;">×</button>
+                </div>
+              </header>
+
+              <!-- Topic Chips -->
+              <div class="search-topics-row">
+                <button class="topic-chip" data-topic="Design">Design</button>
+                <button class="topic-chip" data-topic="Architecture">Architecture</button>
+                <button class="topic-chip" data-topic="Kyoto">Kyoto</button>
+                <button class="topic-chip" data-topic="OLED">OLED</button>
+                <button class="topic-chip" data-topic="Linear">Linear</button>
+              </div>
+
+              <div class="screen-scrollable">
+                <div class="links-feed mode-editorial" id="search-results-feed">
+                  <!-- Results -->
+                </div>
+              </div>
+            </section>
+
+            <!-- 7. SETTINGS SCREEN -->
+            <section class="app-screen" id="screen-settings">
+              <header class="screen-top-bar">
+                <h2>Settings</h2>
+              </header>
+
+              <div class="screen-scrollable">
+                <!-- Vault Security Card -->
+                <div class="vault-status-card">
+                  <div class="vault-status-icon">🛡️</div>
+                  <div>
+                    <h3>Encrypted Local Vault</h3>
+                    <p>AES-256 GCM · Android Keystore</p>
+                  </div>
+                  <span class="status-pill-green">ACTIVE</span>
+                </div>
+
+                <div class="settings-group">
+                  <div class="group-title">Security & App Lock</div>
+                  <div class="setting-row">
+                    <div>
+                      <div class="setting-name">Biometric App Lock</div>
+                      <div class="setting-sub">Require fingerprint or PIN</div>
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" id="switch-biometric" checked>
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="setting-row">
+                    <div>
+                      <div class="setting-name">Allow Screenshots</div>
+                      <div class="setting-sub">Cleared for testing & preview</div>
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" id="switch-screenshots" checked>
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="settings-group">
+                  <div class="group-title">Data & Backup</div>
+                  <div class="setting-row clickable" id="setting-btn-backup">
+                    <div>
+                      <div class="setting-name">Export Encrypted .CLIPPR Backup</div>
+                      <div class="setting-sub">12 links · 4.2 MB total storage</div>
+                    </div>
+                    <span class="chevron">›</span>
+                  </div>
+                </div>
+
+                <div class="settings-group">
+                  <div class="group-title">About Clippr</div>
+                  <div class="setting-row">
+                    <div>
+                      <div class="setting-name">Version</div>
+                      <div class="setting-sub">1.0.0 (Mobbin Redesign Build)</div>
+                    </div>
+                    <span class="setting-value">v1.0</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Bottom Navigation Dock -->
+          <nav class="bottom-nav-dock" id="bottom-nav">
+            <button class="dock-tab active" data-tab="home">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+              <span>Home</span>
+            </button>
+
+            <button class="dock-tab" data-tab="folders">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+              </svg>
+              <span>Folders</span>
+            </button>
+
+            <button class="dock-tab" data-tab="favorites">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+              <span>Favorites</span>
+            </button>
+
+            <button class="dock-tab" data-tab="settings">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+              <span>Settings</span>
+            </button>
+          </nav>
+
+          <!-- Toast Notification Banner -->
+          <div class="app-toast" id="app-toast">Link saved to Clippr</div>
+
+          <!-- SLIDE-UP SHARE SHEET MODAL -->
+          <div class="share-sheet-backdrop" id="share-sheet-modal">
+            <div class="share-sheet-panel">
+              <div class="sheet-drag-handle"></div>
+
+              <div class="sheet-header">
+                <h3>Save link</h3>
+                <button class="sheet-cancel" id="btn-close-share">Cancel</button>
+              </div>
+
+              <!-- Autofilled card -->
+              <div class="sheet-preview-card">
+                <div class="autofilled-chip">✨ AUTOFILLED</div>
+                <div class="sheet-domain" id="sheet-preview-domain">MEDIUM.COM</div>
+                <div class="sheet-title" id="sheet-preview-title">The Art of Building a Calmer Digital Vault</div>
+              </div>
+
+              <!-- 1-Tap Folder Carousel -->
+              <div class="sheet-section-label">Quick-save folder</div>
+              <div class="sheet-folder-chips" id="sheet-folder-chips">
+                <!-- Injected via JS -->
+              </div>
+
+              <!-- Auto-tag Suggestions -->
+              <div class="sheet-section-label">Auto-tag suggestions</div>
+              <div class="sheet-tag-chips" id="sheet-tag-chips">
+                <button class="tag-chip active">#Design</button>
+                <button class="tag-chip active">#UX</button>
+                <button class="tag-chip">#Architecture</button>
+                <button class="tag-chip">#Kyoto</button>
+              </div>
+
+              <button class="btn btn-primary btn-block btn-save-bookmark" id="btn-confirm-save-sheet">
+                ✓ Save to Clippr
+              </button>
+            </div>
+          </div>
+
+          <!-- NEW FOLDER CREATION MODAL -->
+          <div class="share-sheet-backdrop" id="create-folder-modal">
+            <div class="share-sheet-panel" style="max-height: 400px;">
+              <div class="sheet-drag-handle"></div>
+              <div class="sheet-header">
+                <h3>New Folder</h3>
+                <button class="sheet-cancel" id="btn-close-folder-modal">Cancel</button>
+              </div>
+              <input type="text" id="modal-folder-name" class="modal-text-input" placeholder="Folder name (e.g. Finance, Architecture)">
+              <div class="sheet-section-label" style="margin-top: 14px;">Folder Accent Color</div>
+              <div class="color-palette-row">
+                <div class="color-swatch active" style="background: #87B69D;" data-color="#87B69D"></div>
+                <div class="color-swatch" style="background: #F59E0B;" data-color="#F59E0B"></div>
+                <div class="color-swatch" style="background: #EF4444;" data-color="#EF4444"></div>
+                <div class="color-swatch" style="background: #38BDF8;" data-color="#38BDF8"></div>
+                <div class="color-swatch" style="background: #A855F7;" data-color="#A855F7"></div>
+                <div class="color-swatch" style="background: #EC4899;" data-color="#EC4899"></div>
+              </div>
+              <button class="btn btn-primary btn-block" id="btn-confirm-create-folder" style="margin-top: 20px;">
+                Create Folder
+              </button>
+            </div>
+          </div>
+
+        </div> <!-- End of device-screen -->
+
+        <!-- Physical Home Indicator Bar -->
+        <div class="home-indicator-bar"></div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="simulator.js"></script>
+</body>
+</html>

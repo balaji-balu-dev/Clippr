@@ -1,0 +1,39 @@
+  [FRAME] "Onboarding" #3:20812 template=EL-b2a41849
+    [FRAME] "Android status" #3:20813 template=EL-2fb66994
+      [TEXT] #3:20814 template=EL-a5c303b8
+      [FRAME] "System indicators" #3:20815 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22051 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22054 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22057 template=EL-f652840d
+    [FRAME] "Onboarding content" #3:20819 layout={"mode":"column","alignSelf":"stretch","padding":"18px 24px 24px","justifyContent":"space-between","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fill"}}
+      [FRAME] "Brand row" #3:20820 template=EL-bb582553
+        [FRAME] "Brand" #3:20821 template=EL-5d197b60
+          [FRAME] "Clippr mark" #3:20822 template=EL-348a37f3
+            [FRAME] "Clipped link" #3:20823 template=EL-0f0edadc
+              [ELLIPSE] "Private point" #3:20824 template=EL-d07d30f8
+          [TEXT] #3:20825 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_e41a7ecd text="Clippr"
+        [TEXT] #3:20826 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_c487cf45 text="01 / 03"
+      [FRAME] "Share flow illustration" #3:20827 layout={"mode":"column","alignSelf":"stretch","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":312}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(232, 241, 235, 1) 0%, rgba(244, 236, 221, 1) 100%)"}] borderRadius=32px
+        [FRAME] "Source apps" #3:20828 layout={"mode":"column","gap":"10px","sizing":{"horizontal":"hug","vertical":"hug"},"position":"absolute","locationRelativeToParent":{"x":34,"y":36}}
+          [FRAME] "Source app" #3:20829 template=EL-9c59a1e9
+            [IMAGE-SVG] "chrome" #3:22060 template=EL-93c1572c
+          [FRAME] "Source app" #3:20831 template=EL-9c59a1e9
+            [IMAGE-SVG] "message-circle" #3:22063 template=EL-93c1572c
+          [FRAME] "Source app" #3:20833 template=EL-9c59a1e9
+            [IMAGE-SVG] "youtube" #3:22066 template=EL-93c1572c
+        [FRAME] "Share sheet" #3:20835 layout={"mode":"column","padding":"18px","alignItems":"stretch","gap":"14px","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":252.87}} fills=fill_658ab2fa effects=effect_6ee9f108 borderRadius=24px
+          [RECTANGLE] "Link thumbnail" #3:20836 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":114.64}} fills=[{"type":"IMAGE","imageRef":"34f157a45a04f751144c954579744137f9e5c653","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=14px
+          [FRAME] "Shared link" #3:20837 layout={"mode":"column","alignSelf":"stretch","gap":"5px","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [TEXT] #3:20838 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_eaa2436b text="SHARE TO CLIPPR"
+            [TEXT] #3:20839 layout=layout_56d3c81c fills=fill_94036e72 textStyle={"fontFamily":"DM Sans","fontStyle":"Bold","fontWeight":700,"fontSize":16,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="A quiet home for every link"
+        [FRAME] "Saved badge" #3:20840 layout={"mode":"row","padding":"9px 12px","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"},"position":"absolute","locationRelativeToParent":{"x":249,"y":237.67}} fills=fill_76dca3bd effects=effect_2b3500da borderRadius=100px
+          [IMAGE-SVG] "check" #3:22069 template=EL-522202e5
+          [TEXT] #3:20842 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_eaa2436b text="Saved locally"
+      [FRAME] "Message" #3:20843 layout={"mode":"column","alignSelf":"stretch","gap":"13px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [TEXT] #3:20844 layout=layout_177c5efc fills=fill_76dca3bd textStyle={"fontFamily":"Inter","fontStyle":"Regular","fontWeight":400,"fontSize":12,"textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="From anywhere, in a tap"
+        [TEXT] #3:20845 layout=layout_56d3c81c fills=fill_94036e72 textStyle={"fontFamily":"DM Sans","fontStyle":"Regular","fontWeight":400,"fontSize":34,"lineHeight":"1.08em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Keep the internet you care about."
+        [TEXT] #3:20846 layout=layout_56d3c81c fills=fill_ece07e9e textStyle={"fontFamily":"Inter","fontStyle":"Regular","fontWeight":400,"fontSize":15,"lineHeight":"1.52em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Use Android Share to save articles, recipes, videos, and ideas. No account. No cloud by default."
+      [FRAME] "Onboarding actions" #3:20847 layout=layout_222d185b fills=fill_658ab2fa
+        [FRAME] "Button" #3:20848 template=EL-4e098350
+          [IMAGE-SVG] "arrow-right" #3:22072 template=EL-b1d338df
+          [TEXT] #3:20850 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_43426335 text="Set up my vault"

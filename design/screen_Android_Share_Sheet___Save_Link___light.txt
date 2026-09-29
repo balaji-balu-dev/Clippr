@@ -1,0 +1,54 @@
+  [FRAME] "Android Share Sheet · Save Link · light" #3:21268 template=EL-b2a41849
+    [FRAME] "Android status" #3:21269 template=EL-2fb66994
+      [TEXT] #3:21270 template=EL-a5c303b8
+      [FRAME] "System indicators" #3:21271 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22291 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22294 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22297 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21275 template=EL-373c9615
+      [FRAME] "Title group" #3:21276 template=EL-5efdc068
+        [TEXT] #3:21277 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_a8d7ffcb text="Save link"
+      [TEXT] #3:21278 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_d6226fef text="Cancel"
+    [FRAME] "Share sheet content" #3:21279 template=EL-dad7a211
+      [FRAME] "Share source" #3:21280 template=EL-c8d50cb3
+        [FRAME] "Source icon" #3:21281 layout=layout_03d6ce2b fills=fill_658ab2fa borderRadius=9px
+          [IMAGE-SVG] "chrome" #3:22300 template=EL-494805ba
+        [TEXT] #3:21283 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="Shared from Chrome · preview ready"
+      [FRAME] "Rich preview" #3:21284 layout=layout_32c7f4c9 effects=effect_6ee9f108 borderRadius=30px
+        [RECTANGLE] "Preview image" #3:21285 template=EL-781f07bc
+        [RECTANGLE] "Image scrim" #3:21286 template=EL-d050d8f3
+        [FRAME] "Preview status" #3:21287 template=EL-21664413
+          [IMAGE-SVG] "sparkles" #3:22303 template=EL-62b4d877
+          [TEXT] #3:21289 template=EL-524da0b2
+        [FRAME] "Preview copy" #3:21290 template=EL-494d1694
+          [TEXT] #3:21291 template=EL-f88013a3
+          [TEXT] #3:21292 template=EL-f5de2f40
+      [FRAME] "Link fields" #3:21293 template=EL-50ef8a26
+        [FRAME] "Input field" #3:21294 template=EL-5fd47d6a
+          [TEXT] #3:21295 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_c487cf45 text="Link name"
+          [FRAME] "Field value" #3:21296 template=EL-8130b261
+            [TEXT] #3:21297 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_961e93e4 text="The quiet architecture of a reading room"
+        [FRAME] "Input field" #3:21298 template=EL-5fd47d6a
+          [TEXT] #3:21299 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_c487cf45 text="URL"
+          [FRAME] "Field value" #3:21300 template=EL-8130b261
+            [IMAGE-SVG] "link" #3:22306 template=EL-f652840d
+            [TEXT] #3:21302 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_961e93e4 text="https://kinandform.com/stories/quiet-reading-room"
+        [FRAME] "Input field" #3:21303 template=EL-5fd47d6a
+          [TEXT] #3:21304 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_c487cf45 text="Folder"
+          [FRAME] "Field value" #3:21305 template=EL-8130b261
+            [IMAGE-SVG] "folder" #3:22309 template=EL-f652840d
+            [TEXT] #3:21307 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_961e93e4 text="Design"
+            [IMAGE-SVG] "chevron-down" #3:22312 template=EL-f1890f3e
+        [FRAME] "New folder action" #3:21309 template=EL-06a3f237
+          [IMAGE-SVG] "folder-plus" #3:22315 template=EL-f1890f3e
+          [TEXT] #3:21311 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_7f0e5c40 text="+ New Folder"
+      [FRAME] "Save options" #3:21312 template=EL-26393dbd
+        [FRAME] "Favorite option" #3:21313 template=EL-555f2b2b
+          [FRAME] "Checkbox" #3:21314 layout=layout_75d3dc72 strokes=fill_1b68b3e8 strokeWeight=1px borderRadius=7px
+            [IMAGE-SVG] "heart" #3:22318 template=EL-62b4d877
+          [TEXT] #3:21316 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_c487cf45 text="Add to favorites"
+        [TEXT] #3:21317 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_0665b73a text="Saved on device"
+      [FRAME] "Save action" #3:21318 template=EL-627bf71a
+        [FRAME] "Button" #3:21319 template=EL-4e098350
+          [IMAGE-SVG] "check" #3:22321 template=EL-b1d338df
+          [TEXT] #3:21321 template=EL-e0a33f2b

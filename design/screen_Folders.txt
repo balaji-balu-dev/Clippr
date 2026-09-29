@@ -1,0 +1,87 @@
+  [FRAME] "Folders" #3:21083 template=EL-b2a41849
+    [FRAME] "Android status" #3:21084 template=EL-2fb66994
+      [TEXT] #3:21085 template=EL-a5c303b8
+      [FRAME] "System indicators" #3:21086 template=EL-62387e23
+        [IMAGE-SVG] "signal" #3:22189 template=EL-494805ba
+        [IMAGE-SVG] "wifi" #3:22192 template=EL-494805ba
+        [IMAGE-SVG] "battery-full" #3:22195 template=EL-f652840d
+    [FRAME] "Top app bar" #3:21090 template=EL-373c9615
+      [FRAME] "Title group" #3:21091 template=EL-5efdc068
+        [TEXT] #3:21092 layout=layout_177c5efc fills=fill_94036e72 textStyle=style_a8d7ffcb text="Folders"
+      [FRAME] "App bar action" #3:21093 template=EL-921509ca
+        [IMAGE-SVG] "plus" #3:22198 template=EL-a73b2a19
+    [FRAME] "Folders content" #3:21095 layout={"mode":"column","alignSelf":"stretch","padding":"8px 24px 14px","alignItems":"stretch","gap":"18px","sizing":{"horizontal":"fill","vertical":"fill"}}
+      [FRAME] "Search field" #3:21096 template=EL-3befe115
+        [IMAGE-SVG] "search" #3:22201 template=EL-a73b2a19
+        [TEXT] #3:21098 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_02d97395 text="Search folders"
+      [FRAME] "Folder summary" #3:21099 template=EL-bb582553
+        [TEXT] #3:21100 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_defc74b3 text="7 folders · 161 links"
+        [FRAME] "Layout control" #3:21101 layout={"mode":"row","padding":"4px","gap":"4px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_658ab2fa strokes=fill_1b68b3e8 strokeWeight=1px borderRadius=16px
+          [FRAME] "Grid view" #3:21102 layout=layout_3f7e4e3c fills=fill_82306aee borderRadius=10px
+            [IMAGE-SVG] "grid-2x2" #3:22204 template=EL-d40fb4e5
+          [FRAME] "List view" #3:21104 layout=layout_3f7e4e3c
+            [IMAGE-SVG] "list" #3:22207 template=EL-d40fb4e5
+      [FRAME] "Folder grid" #3:21106 template=EL-7e8f3d26
+        [FRAME] "Folder row" #3:21107 template=EL-8d28aa4b
+          [FRAME] "Folder card" #3:21108 template=EL-91885f65
+            [FRAME] "Folder icon" #3:21109 template=EL-58e71732
+              [IMAGE-SVG] "palette" #3:22210 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21111 template=EL-6e926975
+              [TEXT] #3:21112 template=EL-f79106d6
+              [TEXT] #3:21113 template=EL-04d2ce9a
+          [FRAME] "Folder card" #3:21114 template=EL-91885f65
+            [FRAME] "Folder icon" #3:21115 template=EL-4c4c4bfb
+              [IMAGE-SVG] "utensils" #3:22213 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21117 template=EL-6e926975
+              [TEXT] #3:21118 template=EL-0568b301
+              [TEXT] #3:21119 template=EL-30badba6
+        [FRAME] "Folder row" #3:21120 template=EL-8d28aa4b
+          [FRAME] "Folder card" #3:21121 template=EL-91885f65
+            [FRAME] "Folder icon" #3:21122 template=EL-24ec555c
+              [IMAGE-SVG] "plane" #3:22216 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21124 template=EL-6e926975
+              [TEXT] #3:21125 template=EL-ea6f4880
+              [TEXT] #3:21126 template=EL-bb2cdebf
+          [FRAME] "Folder card" #3:21127 template=EL-91885f65
+            [FRAME] "Folder icon" #3:21128 layout=layout_07da14cc fills=["#F0E0E7"] borderRadius=12px
+              [IMAGE-SVG] "book-open" #3:22219 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21130 template=EL-6e926975
+              [TEXT] #3:21131 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_43426335 text="Read later"
+              [TEXT] #3:21132 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_c487cf45 text="46 links"
+        [FRAME] "Folder row" #3:21133 template=EL-8d28aa4b
+          [FRAME] "Folder card" #3:21134 template=EL-91885f65
+            [FRAME] "Folder icon" #3:21135 layout=layout_07da14cc fills=["#E4E8DD"] borderRadius=12px
+              [IMAGE-SVG] "briefcase" #3:22222 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21137 template=EL-6e926975
+              [TEXT] #3:21138 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_43426335 text="Work"
+              [TEXT] #3:21139 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_c487cf45 text="27 links"
+          [FRAME] "Folder card" #3:21140 template=EL-91885f65
+            [FRAME] "Folder icon" #3:21141 layout=layout_07da14cc fills=["#EFE5D7"] borderRadius=12px
+              [IMAGE-SVG] "sparkles" #3:22225 template=EL-a73b2a19
+            [FRAME] "Folder information" #3:21143 template=EL-6e926975
+              [TEXT] #3:21144 layout=layout_56d3c81c fills=fill_94036e72 textStyle=style_43426335 text="Inspiration"
+              [TEXT] #3:21145 layout=layout_56d3c81c fills=fill_ece07e9e textStyle=style_c487cf45 text="19 links"
+      [FRAME] "Inbox folder" #3:21146 layout={"mode":"row","alignSelf":"stretch","padding":"14px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":66}} fills=fill_82306aee borderRadius=24px
+        [FRAME] "Inbox icon" #3:21147 template=EL-0af8dc0d
+          [IMAGE-SVG] "inbox" #3:22228 template=EL-b1d338df
+        [FRAME] "Inbox information" #3:21149 template=EL-12a11ae8
+          [TEXT] #3:21150 template=EL-9bc45e7f
+          [TEXT] #3:21151 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_0665b73a text="8 uncategorized links"
+        [IMAGE-SVG] "chevron-right" #3:22231 template=EL-f652840d
+    [FRAME] "Bottom navigation" #3:21156 layout={"mode":"row","alignSelf":"stretch","padding":"10px 18px 12px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":78}} fills=fill_658ab2fa strokes=fill_1b68b3e8 strokeWeight="1px 0px 0px"
+      [FRAME] "Navigation item" #3:21157 template=EL-a34f3e9d
+        [FRAME] "Icon container" #3:21158 template=EL-4d3fe1f2
+          [IMAGE-SVG] "house" #3:22237 template=EL-b1d338df
+        [TEXT] #3:21160 layout=layout_177c5efc fills=fill_ece07e9e textStyle=style_66c34925 text="Home"
+      [FRAME] "Navigation item" #3:21161 template=EL-a34f3e9d
+        [FRAME] "Icon container" #3:21162 template=EL-33ca8e94
+          [IMAGE-SVG] "folder" #3:22240 template=EL-b1d338df
+        [TEXT] #3:21164 layout=layout_177c5efc fills=fill_76dca3bd textStyle=style_eaa2436b text="Folders"
+      [FRAME] "Navigation item" #3:21165 template=EL-a34f3e9d
+        [FRAME] "Icon container" #3:21166 template=EL-4d3fe1f2
+          [IMAGE-SVG] "heart" #3:22243 template=EL-b1d338df
+        [TEXT] #3:21168 template=EL-1c1e2c4f
+      [FRAME] "Navigation item" #3:21169 template=EL-a34f3e9d
+        [FRAME] "Icon container" #3:21170 template=EL-4d3fe1f2
+          [IMAGE-SVG] "settings" #3:22246 template=EL-b1d338df
+        [TEXT] #3:21172 template=EL-a2ff7cfa
